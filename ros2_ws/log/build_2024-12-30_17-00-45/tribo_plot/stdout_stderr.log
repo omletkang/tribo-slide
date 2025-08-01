@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing tribo_plot.egg-info/PKG-INFO
+writing dependency_links to tribo_plot.egg-info/dependency_links.txt
+writing entry points to tribo_plot.egg-info/entry_points.txt
+writing requirements to tribo_plot.egg-info/requires.txt
+writing top-level names to tribo_plot.egg-info/top_level.txt
+reading manifest file 'tribo_plot.egg-info/SOURCES.txt'
+writing manifest file 'tribo_plot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo-plot.egg-link (link to .)
+Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+
+Installed /home/kang/ros2_ws/build/tribo_plot
+running symlink_data
+symbolically linking /home/kang/ros2_ws/build/tribo_plot/resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+symbolically linking /home/kang/ros2_ws/build/tribo_plot/package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot

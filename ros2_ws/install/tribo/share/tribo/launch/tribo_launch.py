@@ -1,0 +1,1 @@
+/home/kang/ros2_ws/src/tribo/launch/tribo_launch.py

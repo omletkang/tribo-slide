@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/tribo_plot/tribo_plot.egg-info/PKG-INFO
+writing dependency_links to ../../build/tribo_plot/tribo_plot.egg-info/dependency_links.txt
+writing entry points to ../../build/tribo_plot/tribo_plot.egg-info/entry_points.txt
+writing requirements to ../../build/tribo_plot/tribo_plot.egg-info/requires.txt
+writing top-level names to ../../build/tribo_plot/tribo_plot.egg-info/top_level.txt
+reading manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+writing manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tribo_plot/models.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+copying tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+copying tribo_plot/__init__.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+copying tribo_plot/app1.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+copying tribo_plot/sensorT_fake.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+running install
+running install_lib
+running install_data
+copying resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+copying package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot
+running install_egg_info
+removing '/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tribo_plot/tribo_plot.egg-info to /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing models script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+Installing sensorT_fake script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+writing list of installed files to '/home/kang/ros2_ws/build/tribo_plot/install.log'

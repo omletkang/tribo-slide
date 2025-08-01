@@ -1,0 +1,5 @@
+[console_scripts]
+app1 = tribo_plot.app1:main
+models = tribo_plot.models:main
+plot_sensor = tribo_plot.plot_sensor:main
+sensorT_fake = tribo_plot.sensorT_fake:main

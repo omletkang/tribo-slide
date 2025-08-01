@@ -1,0 +1,305 @@
+[0.000000] (-) TimerEvent: {}
+[0.000464] (tribo) JobQueued: {'identifier': 'tribo', 'dependencies': OrderedDict()}
+[0.000516] (tribo_plot) JobQueued: {'identifier': 'tribo_plot', 'dependencies': OrderedDict()}
+[0.000530] (ur_test) JobQueued: {'identifier': 'ur_test', 'dependencies': OrderedDict()}
+[0.000541] (tribo) JobStarted: {'identifier': 'tribo'}
+[0.013923] (tribo_plot) JobStarted: {'identifier': 'tribo_plot'}
+[0.021665] (ur_test) JobStarted: {'identifier': 'ur_test'}
+[0.028222] (tribo) JobProgress: {'identifier': 'tribo', 'progress': 'cmake'}
+[0.030957] (tribo) JobProgress: {'identifier': 'tribo', 'progress': 'build'}
+[0.032186] (tribo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kang/ros2_ws/build/tribo', '--', '-j16', '-l16'], 'cwd': '/home/kang/ros2_ws/build/tribo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'kang'), ('GIT_ASKPASS', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kang'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/kang'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-cf039cd3-43b1-423f-ae52-87c86b1d9fa9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kang'), ('NAME', 'LAPTOP-ALASKA24U'), ('WSL_INTEROP', '/run/WSL/2054_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/home/kang/miniconda3/bin:/home/kang/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/usbipd-win:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/Java/jdk-21/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7:/mnt/c/Users/littl/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/littl/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e194e4210.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kang/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kang/ros2_ws/build/tribo'), ('CONDA_EXE', '/home/kang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:'), ('CONDA_PREFIX', '/home/kang/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099400] (-) TimerEvent: {}
+[0.203322] (-) TimerEvent: {}
+[0.228316] (tribo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.229354] (ur_test) JobProgress: {'identifier': 'ur_test', 'progress': 'cmake'}
+[0.232063] (ur_test) JobProgress: {'identifier': 'ur_test', 'progress': 'build'}
+[0.232174] (ur_test) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kang/ros2_ws/build/ur_test', '--', '-j16', '-l16'], 'cwd': '/home/kang/ros2_ws/build/ur_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'kang'), ('GIT_ASKPASS', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kang'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/kang'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-cf039cd3-43b1-423f-ae52-87c86b1d9fa9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kang'), ('NAME', 'LAPTOP-ALASKA24U'), ('WSL_INTEROP', '/run/WSL/2054_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/home/kang/miniconda3/bin:/home/kang/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/usbipd-win:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/Java/jdk-21/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7:/mnt/c/Users/littl/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/littl/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e194e4210.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kang/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kang/ros2_ws/build/ur_test'), ('CONDA_EXE', '/home/kang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:'), ('CONDA_PREFIX', '/home/kang/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.257600] (ur_test) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.303527] (-) TimerEvent: {}
+[0.366312] (tribo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.378372] (ur_test) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.389407] (tribo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.389676] (ur_test) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.404172] (-) TimerEvent: {}
+[0.505290] (-) TimerEvent: {}
+[0.509154] (tribo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.509346] (ur_test) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.512452] (tribo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.512601] (ur_test) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.520959] (ur_test) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.521121] (tribo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.535052] (ur_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.535286] (tribo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.550081] (ur_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.550249] (tribo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.593446] (ur_test) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.593811] (tribo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.596271] (ur_test) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.596420] (tribo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.605741] (-) TimerEvent: {}
+[0.706914] (-) TimerEvent: {}
+[0.715738] (tribo_plot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/tribo_plot', 'build', '--build-base', '/home/kang/ros2_ws/build/tribo_plot/build', 'install', '--record', '/home/kang/ros2_ws/build/tribo_plot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/kang/ros2_ws/src/tribo_plot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'kang', 'GIT_ASKPASS': '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/kang', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/kang', 'TERM_PROGRAM_VERSION': '1.101.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cf039cd3-43b1-423f-ae52-87c86b1d9fa9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'kang', 'NAME': 'LAPTOP-ALASKA24U', 'WSL_INTEROP': '/run/WSL/2054_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/home/kang/miniconda3/bin:/home/kang/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/usbipd-win:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/Java/jdk-21/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7:/mnt/c/Users/littl/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/littl/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0e194e4210.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/kang/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kang/ros2_ws/build/tribo_plot', 'CONDA_EXE': '/home/kang/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:', 'CONDA_PREFIX': '/home/kang/miniconda3', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[0.807081] (-) TimerEvent: {}
+[0.877406] (tribo_plot) StdoutLine: {'line': b'running egg_info\n'}
+[0.877854] (tribo_plot) StdoutLine: {'line': b'writing ../../build/tribo_plot/tribo_plot.egg-info/PKG-INFO\n'}
+[0.878979] (tribo_plot) StdoutLine: {'line': b'writing dependency_links to ../../build/tribo_plot/tribo_plot.egg-info/dependency_links.txt\n'}
+[0.879193] (tribo_plot) StdoutLine: {'line': b'writing entry points to ../../build/tribo_plot/tribo_plot.egg-info/entry_points.txt\n'}
+[0.879374] (tribo_plot) StdoutLine: {'line': b'writing requirements to ../../build/tribo_plot/tribo_plot.egg-info/requires.txt\n'}
+[0.879527] (tribo_plot) StdoutLine: {'line': b'writing top-level names to ../../build/tribo_plot/tribo_plot.egg-info/top_level.txt\n'}
+[0.881138] (tribo_plot) StdoutLine: {'line': b"reading manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'\n"}
+[0.881984] (tribo_plot) StdoutLine: {'line': b"writing manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'\n"}
+[0.882123] (tribo_plot) StdoutLine: {'line': b'running build\n'}
+[0.882172] (tribo_plot) StdoutLine: {'line': b'running build_py\n'}
+[0.882548] (tribo_plot) StdoutLine: {'line': b'copying tribo_plot/models.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot\n'}
+[0.882997] (tribo_plot) StdoutLine: {'line': b'copying tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot\n'}
+[0.883669] (tribo_plot) StdoutLine: {'line': b'copying tribo_plot/app1.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot\n'}
+[0.883825] (tribo_plot) StdoutLine: {'line': b'running install\n'}
+[0.884082] (tribo_plot) StdoutLine: {'line': b'running install_lib\n'}
+[0.885053] (tribo_plot) StdoutLine: {'line': b'copying /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/models.py -> /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot\n'}
+[0.885363] (tribo_plot) StdoutLine: {'line': b'copying /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot\n'}
+[0.885538] (tribo_plot) StdoutLine: {'line': b'copying /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/app1.py -> /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot\n'}
+[0.886150] (tribo_plot) StdoutLine: {'line': b'byte-compiling /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/models.py to models.cpython-310.pyc\n'}
+[0.886812] (tribo_plot) StdoutLine: {'line': b'byte-compiling /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/plot_sensor.py to plot_sensor.cpython-310.pyc\n'}
+[0.887718] (tribo_plot) StdoutLine: {'line': b'byte-compiling /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app1.py to app1.cpython-310.pyc\n'}
+[0.887917] (tribo_plot) StdoutLine: {'line': b'running install_data\n'}
+[0.888042] (tribo_plot) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.889520] (tribo_plot) StdoutLine: {'line': b"removing '/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.890659] (tribo_plot) StdoutLine: {'line': b'Copying ../../build/tribo_plot/tribo_plot.egg-info to /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info\n'}
+[0.892834] (tribo_plot) StdoutLine: {'line': b'running install_scripts\n'}
+[0.907680] (-) TimerEvent: {}
+[0.908448] (tribo_plot) StdoutLine: {'line': b'Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot\n'}
+[0.908811] (tribo_plot) StdoutLine: {'line': b"writing list of installed files to '/home/kang/ros2_ws/build/tribo_plot/install.log'\n"}
+[0.933658] (tribo_plot) CommandEnded: {'returncode': 0}
+[0.952271] (tribo_plot) JobEnded: {'identifier': 'tribo_plot', 'rc': 0}
+[1.007885] (-) TimerEvent: {}
+[1.108915] (-) TimerEvent: {}
+[1.210206] (-) TimerEvent: {}
+[1.310722] (-) TimerEvent: {}
+[1.411129] (-) TimerEvent: {}
+[1.511535] (-) TimerEvent: {}
+[1.612096] (-) TimerEvent: {}
+[1.712564] (-) TimerEvent: {}
+[1.813051] (-) TimerEvent: {}
+[1.913710] (-) TimerEvent: {}
+[2.014340] (-) TimerEvent: {}
+[2.016409] (ur_test) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.016602] (tribo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.077256] (tribo) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.13 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[2.077520] (ur_test) StdoutLine: {'line': b'-- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.095270] (ur_test) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.114689] (-) TimerEvent: {}
+[2.136988] (tribo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.155242] (tribo) StdoutLine: {'line': b'-- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.157781] (tribo) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.214830] (-) TimerEvent: {}
+[2.261629] (tribo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.261998] (ur_test) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.287737] (ur_test) StdoutLine: {'line': b'-- Generating done\n'}
+[2.288698] (tribo) StdoutLine: {'line': b'-- Generating done\n'}
+[2.294583] (ur_test) StdoutLine: {'line': b'-- Build files have been written to: /home/kang/ros2_ws/build/ur_test\n'}
+[2.295229] (tribo) StdoutLine: {'line': b'-- Build files have been written to: /home/kang/ros2_ws/build/tribo\n'}
+[2.315076] (-) TimerEvent: {}
+[2.320871] (ur_test) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur_command_node\x1b[0m\n'}
+[2.321289] (ur_test) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tcp_pose_node\x1b[0m\n'}
+[2.321369] (ur_test) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur_command_listener\x1b[0m\n'}
+[2.321410] (tribo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sensorT\x1b[0m\n'}
+[2.321534] (tribo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target writer\x1b[0m\n'}
+[2.321598] (tribo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sensorRFT\x1b[0m\n'}
+[2.403043] (tribo) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/sensorRFT.dir/src/sensor_RFT.cpp.o\x1b[0m\n'}
+[2.403287] (tribo) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sensorT.dir/src/sensor_T.cpp.o\x1b[0m\n'}
+[2.403335] (ur_test) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ur_command_listener.dir/src/ur_command_listener.cpp.o\x1b[0m\n'}
+[2.403391] (ur_test) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ur_command_node.dir/src/ur_command_node.cpp.o\x1b[0m\n'}
+[2.411006] (ur_test) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tcp_pose_node.dir/src/tcp_pose_node.cpp.o\x1b[0m\n'}
+[2.411837] (tribo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/writer.dir/src/writer.cpp.o\x1b[0m\n'}
+[2.415167] (-) TimerEvent: {}
+[2.517796] (-) TimerEvent: {}
+[2.618288] (-) TimerEvent: {}
+[2.718729] (-) TimerEvent: {}
+[2.819209] (-) TimerEvent: {}
+[2.920017] (-) TimerEvent: {}
+[3.021181] (-) TimerEvent: {}
+[3.123488] (-) TimerEvent: {}
+[3.225033] (-) TimerEvent: {}
+[3.325739] (-) TimerEvent: {}
+[3.426483] (-) TimerEvent: {}
+[3.530348] (-) TimerEvent: {}
+[3.634432] (-) TimerEvent: {}
+[3.738516] (-) TimerEvent: {}
+[3.842571] (-) TimerEvent: {}
+[3.946650] (-) TimerEvent: {}
+[4.050167] (-) TimerEvent: {}
+[4.154305] (-) TimerEvent: {}
+[4.258329] (-) TimerEvent: {}
+[4.360386] (-) TimerEvent: {}
+[4.463755] (-) TimerEvent: {}
+[4.567541] (-) TimerEvent: {}
+[4.670391] (-) TimerEvent: {}
+[4.773615] (-) TimerEvent: {}
+[4.877773] (-) TimerEvent: {}
+[4.981890] (-) TimerEvent: {}
+[5.084671] (-) TimerEvent: {}
+[5.188577] (-) TimerEvent: {}
+[5.292639] (-) TimerEvent: {}
+[5.394176] (-) TimerEvent: {}
+[5.494754] (-) TimerEvent: {}
+[5.597348] (-) TimerEvent: {}
+[5.701093] (-) TimerEvent: {}
+[5.804511] (-) TimerEvent: {}
+[5.908644] (-) TimerEvent: {}
+[6.012487] (-) TimerEvent: {}
+[6.114411] (-) TimerEvent: {}
+[6.123458] (ur_test) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable tcp_pose_node\x1b[0m\n'}
+[6.217379] (-) TimerEvent: {}
+[6.318139] (-) TimerEvent: {}
+[6.397638] (ur_test) StdoutLine: {'line': b'[ 66%] Built target tcp_pose_node\n'}
+[6.418446] (-) TimerEvent: {}
+[6.522142] (-) TimerEvent: {}
+[6.626155] (-) TimerEvent: {}
+[6.730167] (-) TimerEvent: {}
+[6.834274] (-) TimerEvent: {}
+[6.938357] (-) TimerEvent: {}
+[7.042436] (-) TimerEvent: {}
+[7.067679] (ur_test) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable ur_command_node\x1b[0m\n'}
+[7.145304] (-) TimerEvent: {}
+[7.237646] (tribo) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable sensorT\x1b[0m\n'}
+[7.245827] (-) TimerEvent: {}
+[7.270451] (tribo) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable sensorRFT\x1b[0m\n'}
+[7.289251] (ur_test) StdoutLine: {'line': b'[ 83%] Built target ur_command_node\n'}
+[7.347294] (-) TimerEvent: {}
+[7.447951] (-) TimerEvent: {}
+[7.462562] (tribo) StdoutLine: {'line': b'[ 83%] Built target sensorT\n'}
+[7.482220] (tribo) StdoutLine: {'line': b'[ 83%] Built target sensorRFT\n'}
+[7.548432] (-) TimerEvent: {}
+[7.652453] (-) TimerEvent: {}
+[7.756637] (-) TimerEvent: {}
+[7.860826] (-) TimerEvent: {}
+[7.964974] (-) TimerEvent: {}
+[8.069037] (-) TimerEvent: {}
+[8.173068] (-) TimerEvent: {}
+[8.274880] (-) TimerEvent: {}
+[8.378818] (-) TimerEvent: {}
+[8.482765] (-) TimerEvent: {}
+[8.586858] (-) TimerEvent: {}
+[8.690935] (-) TimerEvent: {}
+[8.794951] (-) TimerEvent: {}
+[8.898979] (-) TimerEvent: {}
+[9.002954] (-) TimerEvent: {}
+[9.103701] (-) TimerEvent: {}
+[9.207731] (-) TimerEvent: {}
+[9.311868] (-) TimerEvent: {}
+[9.415921] (-) TimerEvent: {}
+[9.520033] (-) TimerEvent: {}
+[9.624156] (-) TimerEvent: {}
+[9.728136] (-) TimerEvent: {}
+[9.832260] (-) TimerEvent: {}
+[9.936363] (-) TimerEvent: {}
+[10.040432] (-) TimerEvent: {}
+[10.144458] (-) TimerEvent: {}
+[10.248615] (-) TimerEvent: {}
+[10.352707] (-) TimerEvent: {}
+[10.442753] (ur_test) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ur_command_listener\x1b[0m\n'}
+[10.453210] (-) TimerEvent: {}
+[10.557296] (-) TimerEvent: {}
+[10.658621] (-) TimerEvent: {}
+[10.759802] (ur_test) StdoutLine: {'line': b'[100%] Built target ur_command_listener\n'}
+[10.759995] (-) TimerEvent: {}
+[10.770777] (ur_test) CommandEnded: {'returncode': 0}
+[10.771562] (ur_test) JobProgress: {'identifier': 'ur_test', 'progress': 'install'}
+[10.781162] (ur_test) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kang/ros2_ws/build/ur_test'], 'cwd': '/home/kang/ros2_ws/build/ur_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'kang'), ('GIT_ASKPASS', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kang'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/kang'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-cf039cd3-43b1-423f-ae52-87c86b1d9fa9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kang'), ('NAME', 'LAPTOP-ALASKA24U'), ('WSL_INTEROP', '/run/WSL/2054_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/home/kang/miniconda3/bin:/home/kang/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/usbipd-win:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/Java/jdk-21/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7:/mnt/c/Users/littl/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/littl/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e194e4210.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kang/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kang/ros2_ws/build/ur_test'), ('CONDA_EXE', '/home/kang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:'), ('CONDA_PREFIX', '/home/kang/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.786762] (ur_test) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.787124] (ur_test) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.787323] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/tcp_pose_node\n'}
+[10.787444] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_node\n'}
+[10.787551] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_listener\n'}
+[10.788240] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/package_run_dependencies/ur_test\n'}
+[10.788783] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/parent_prefix_path/ur_test\n'}
+[10.789371] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.sh\n'}
+[10.790003] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.dsv\n'}
+[10.790505] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.sh\n'}
+[10.791061] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.dsv\n'}
+[10.791411] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.bash\n'}
+[10.791801] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.sh\n'}
+[10.792120] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.zsh\n'}
+[10.792386] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.dsv\n'}
+[10.792503] (ur_test) StdoutLine: {'line': b'-- Symlinking: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.dsv\n'}
+[10.800626] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/packages/ur_test\n'}
+[10.800906] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig.cmake\n'}
+[10.801155] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig-version.cmake\n'}
+[10.801300] (ur_test) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.xml\n'}
+[10.802956] (ur_test) CommandEnded: {'returncode': 0}
+[10.814649] (ur_test) JobEnded: {'identifier': 'ur_test', 'rc': 0}
+[10.861118] (-) TimerEvent: {}
+[10.962585] (-) TimerEvent: {}
+[11.064322] (-) TimerEvent: {}
+[11.165902] (-) TimerEvent: {}
+[11.267665] (-) TimerEvent: {}
+[11.369009] (-) TimerEvent: {}
+[11.469971] (-) TimerEvent: {}
+[11.570414] (-) TimerEvent: {}
+[11.671624] (-) TimerEvent: {}
+[11.773046] (-) TimerEvent: {}
+[11.874572] (-) TimerEvent: {}
+[11.976250] (-) TimerEvent: {}
+[12.077886] (-) TimerEvent: {}
+[12.178780] (-) TimerEvent: {}
+[12.279614] (-) TimerEvent: {}
+[12.380642] (-) TimerEvent: {}
+[12.482403] (-) TimerEvent: {}
+[12.583666] (-) TimerEvent: {}
+[12.684455] (-) TimerEvent: {}
+[12.785945] (-) TimerEvent: {}
+[12.887561] (-) TimerEvent: {}
+[12.989058] (-) TimerEvent: {}
+[13.090415] (-) TimerEvent: {}
+[13.194422] (-) TimerEvent: {}
+[13.298659] (-) TimerEvent: {}
+[13.402755] (-) TimerEvent: {}
+[13.505380] (-) TimerEvent: {}
+[13.606100] (-) TimerEvent: {}
+[13.707447] (-) TimerEvent: {}
+[13.808988] (-) TimerEvent: {}
+[13.909792] (-) TimerEvent: {}
+[14.011308] (-) TimerEvent: {}
+[14.112367] (-) TimerEvent: {}
+[14.213853] (-) TimerEvent: {}
+[14.315122] (-) TimerEvent: {}
+[14.417325] (-) TimerEvent: {}
+[14.518836] (-) TimerEvent: {}
+[14.620437] (-) TimerEvent: {}
+[14.721977] (-) TimerEvent: {}
+[14.823557] (-) TimerEvent: {}
+[14.921604] (tribo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable writer\x1b[0m\n'}
+[14.923763] (-) TimerEvent: {}
+[15.024281] (-) TimerEvent: {}
+[15.125728] (-) TimerEvent: {}
+[15.226944] (-) TimerEvent: {}
+[15.329226] (-) TimerEvent: {}
+[15.431380] (-) TimerEvent: {}
+[15.481027] (tribo) StdoutLine: {'line': b'[100%] Built target writer\n'}
+[15.489890] (tribo) CommandEnded: {'returncode': 0}
+[15.490960] (tribo) JobProgress: {'identifier': 'tribo', 'progress': 'install'}
+[15.492264] (tribo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kang/ros2_ws/build/tribo'], 'cwd': '/home/kang/ros2_ws/build/tribo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'kang'), ('GIT_ASKPASS', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kang'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/kang'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-cf039cd3-43b1-423f-ae52-87c86b1d9fa9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kang'), ('NAME', 'LAPTOP-ALASKA24U'), ('WSL_INTEROP', '/run/WSL/2054_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kang/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/home/kang/miniconda3/bin:/home/kang/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/usbipd-win:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/Java/jdk-21/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7:/mnt/c/Users/littl/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/littl/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e194e4210.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kang/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kang/ros2_ws/build/tribo'), ('CONDA_EXE', '/home/kang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:'), ('CONDA_PREFIX', '/home/kang/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.497129] (tribo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.497440] (tribo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.497704] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorT\n'}
+[15.498002] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorRFT\n'}
+[15.498080] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/writer\n'}
+[15.498674] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/launch/tribo_launch.py\n'}
+[15.499427] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/package_run_dependencies/tribo\n'}
+[15.499920] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/parent_prefix_path/tribo\n'}
+[15.500423] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.sh\n'}
+[15.500870] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.dsv\n'}
+[15.501203] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.sh\n'}
+[15.501640] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.dsv\n'}
+[15.502038] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.bash\n'}
+[15.502413] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.sh\n'}
+[15.502808] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.zsh\n'}
+[15.503282] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.dsv\n'}
+[15.503390] (tribo) StdoutLine: {'line': b'-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.dsv\n'}
+[15.510900] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/packages/tribo\n'}
+[15.511247] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig.cmake\n'}
+[15.511444] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig-version.cmake\n'}
+[15.511559] (tribo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/package.xml\n'}
+[15.513293] (tribo) CommandEnded: {'returncode': 0}
+[15.524577] (tribo) JobEnded: {'identifier': 'tribo', 'rc': 0}
+[15.525435] (-) EventReactorShutdown: {}

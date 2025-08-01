@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kang/ros2_ws/build/tribo/sensorT" "/home/kang/ros2_ws/build/tribo/sensorRFT" "/home/kang/ros2_ws/build/tribo/writer" "TARGETS" "sensorT" "sensorRFT" "writer" "DESTINATION" "lib/tribo")

@@ -1,0 +1,27 @@
+[0.159s] Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[0.193s] [ 66%] Built target ur_command_node
+[0.194s] [ 66%] Built target ur_command_listener
+[0.194s] [100%] Built target tcp_pose_node
+[0.222s] Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[0.251s] Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test
+[0.254s] -- Install configuration: ""
+[0.255s] -- Execute custom install script
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/tcp_pose_node
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_node
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_listener
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/package_run_dependencies/ur_test
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/parent_prefix_path/ur_test
+[0.255s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.sh
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.dsv
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.sh
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.dsv
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.bash
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.sh
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.zsh
+[0.256s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.dsv
+[0.256s] -- Symlinking: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.dsv
+[0.261s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/packages/ur_test
+[0.262s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig.cmake
+[0.262s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig-version.cmake
+[0.262s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.xml
+[0.264s] Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test

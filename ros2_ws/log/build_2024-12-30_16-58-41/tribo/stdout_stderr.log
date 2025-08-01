@@ -1,0 +1,79 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tf2_msgs: 0.25.9 (/opt/ros/humble/share/tf2_msgs/cmake)
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Configuring done
+[33mCMake Warning at CMakeLists.txt:18 (add_executable):
+  Cannot generate a safe runtime search path for target sensorT because files
+  in some directories may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/kang/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:21 (add_executable):
+  Cannot generate a safe runtime search path for target sensorRFT because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/kang/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:24 (add_executable):
+  Cannot generate a safe runtime search path for target writer because files
+  in some directories may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/kang/miniconda3/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+-- Generating done
+-- Build files have been written to: /home/kang/ros2_ws/build/tribo
+[ 16%] [32mBuilding CXX object CMakeFiles/sensorT.dir/src/sensor_T.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sensorRFT.dir/src/sensor_RFT.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/writer.dir/src/writer.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable sensorRFT[0m
+[ 66%] Built target sensorRFT
+[ 83%] [32m[1mLinking CXX executable sensorT[0m
+[ 83%] Built target sensorT
+[100%] [32m[1mLinking CXX executable writer[0m
+[100%] Built target writer
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorT
+-- Symlinking: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorRFT
+-- Symlinking: /home/kang/ros2_ws/install/tribo/lib/tribo/writer
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/launch/tribo_launch.py
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/package_run_dependencies/tribo
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/parent_prefix_path/tribo
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.sh
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.sh
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.dsv
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.bash
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.sh
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.zsh
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.dsv
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.dsv
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/packages/tribo
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig.cmake
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig-version.cmake
+-- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.xml

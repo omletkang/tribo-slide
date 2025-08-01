@@ -1,0 +1,4 @@
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo

@@ -1,0 +1,82 @@
+[0.025s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+[0.247s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.247s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.247s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.418s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.420s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.424s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.432s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.444s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.477s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.379s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.431s] -- Found tf2_msgs: 0.25.9 (/opt/ros/humble/share/tf2_msgs/cmake)
+[5.483s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.496s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[5.499s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.616s] -- Configuring done
+[5.626s] [33mCMake Warning at CMakeLists.txt:18 (add_executable):
+[5.626s]   Cannot generate a safe runtime search path for target sensorT because files
+[5.626s]   in some directories may conflict with libraries in implicit directories:
+[5.626s] 
+[5.626s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.626s]       /home/kang/miniconda3/lib
+[5.626s] 
+[5.626s]   Some of these libraries may not be found correctly.
+[5.626s] 
+[5.626s] [0m
+[5.629s] [33mCMake Warning at CMakeLists.txt:21 (add_executable):
+[5.629s]   Cannot generate a safe runtime search path for target sensorRFT because
+[5.629s]   files in some directories may conflict with libraries in implicit
+[5.629s]   directories:
+[5.629s] 
+[5.629s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.629s]       /home/kang/miniconda3/lib
+[5.629s] 
+[5.629s]   Some of these libraries may not be found correctly.
+[5.629s] 
+[5.629s] [0m
+[5.633s] [33mCMake Warning at CMakeLists.txt:24 (add_executable):
+[5.633s]   Cannot generate a safe runtime search path for target writer because files
+[5.633s]   in some directories may conflict with libraries in implicit directories:
+[5.633s] 
+[5.633s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.633s]       /home/kang/miniconda3/lib
+[5.633s] 
+[5.633s]   Some of these libraries may not be found correctly.
+[5.634s] 
+[5.634s] [0m
+[5.635s] -- Generating done
+[5.640s] -- Build files have been written to: /home/kang/ros2_ws/build/tribo
+[5.648s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+[5.651s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[5.680s] [35m[1mConsolidate compiler generated dependencies of target sensorRFT[0m
+[5.680s] [35m[1mConsolidate compiler generated dependencies of target writer[0m
+[5.680s] [35m[1mConsolidate compiler generated dependencies of target sensorT[0m
+[5.695s] [ 33%] Built target sensorT
+[5.696s] [ 83%] Built target writer
+[5.696s] [100%] Built target sensorRFT
+[5.705s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[5.712s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+[5.717s] -- Install configuration: ""
+[5.718s] -- Execute custom install script
+[5.718s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorT
+[5.719s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorRFT
+[5.719s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/writer
+[5.719s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/launch/tribo_launch.py
+[5.719s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/package_run_dependencies/tribo
+[5.719s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/parent_prefix_path/tribo
+[5.720s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.sh
+[5.720s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.dsv
+[5.720s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.sh
+[5.720s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.dsv
+[5.721s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.bash
+[5.721s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.sh
+[5.721s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.zsh
+[5.721s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.dsv
+[5.721s] -- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.dsv
+[5.729s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/packages/tribo
+[5.729s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig.cmake
+[5.729s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig-version.cmake
+[5.729s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/package.xml
+[5.732s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo

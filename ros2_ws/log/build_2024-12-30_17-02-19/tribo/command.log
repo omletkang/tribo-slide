@@ -1,0 +1,6 @@
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo

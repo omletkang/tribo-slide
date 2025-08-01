@@ -1,0 +1,55 @@
+[0.029s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble: CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+[0.269s] -- The C compiler identification is GNU 11.4.0
+[0.662s] -- The CXX compiler identification is GNU 11.4.0
+[0.927s] -- Detecting C compiler ABI info
+[1.058s] -- Detecting C compiler ABI info - done
+[1.064s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.064s] -- Detecting C compile features
+[1.065s] -- Detecting C compile features - done
+[1.068s] -- Detecting CXX compiler ABI info
+[1.229s] -- Detecting CXX compiler ABI info - done
+[1.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.245s] -- Detecting CXX compile features
+[1.246s] -- Detecting CXX compile features - done
+[1.248s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.577s] -- Found Python3: /home/kang/miniconda3/bin/python3 (found version "3.10.16") found components: Interpreter 
+[1.658s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.680s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.863s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.867s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.874s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.883s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.896s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.930s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.932s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.184s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.601s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.082s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.089s] -- Looking for pthread.h
+[7.239s] -- Looking for pthread.h - found
+[7.239s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.395s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.396s] -- Found Threads: TRUE  
+[7.449s] -- Found tf2_msgs: 0.25.9 (/opt/ros/humble/share/tf2_msgs/cmake)
+[7.494s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.508s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[7.514s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[7.569s] Traceback (most recent call last):
+[7.569s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[7.569s]     from catkin_pkg.package import parse_package_string
+[7.569s] ModuleNotFoundError: No module named 'catkin_pkg'
+[7.573s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[7.573s]   execute_process(/home/kang/miniconda3/bin/python3
+[7.573s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[7.574s]   /home/kang/ros2_ws/src/tribo/package.xml
+[7.574s]   /home/kang/ros2_ws/build/tribo/ament_cmake_core/package.cmake) returned
+[7.574s]   error code 1
+[7.574s] Call Stack (most recent call first):
+[7.574s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[7.575s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[7.575s]   CMakeLists.txt:44 (ament_package)
+[7.575s] 
+[7.575s] [0m
+[7.575s] -- Configuring incomplete, errors occurred!
+[7.575s] See also "/home/kang/ros2_ws/build/tribo/CMakeFiles/CMakeOutput.log".
+[7.584s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble: CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo

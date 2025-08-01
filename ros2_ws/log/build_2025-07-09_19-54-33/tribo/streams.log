@@ -1,0 +1,55 @@
+[0.038s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[0.228s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.366s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.389s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.509s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.512s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.521s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.535s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.550s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.593s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.596s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.016s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.077s] -- Found tf2_msgs: 0.25.13 (/opt/ros/humble/share/tf2_msgs/cmake)
+[2.137s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.155s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[2.157s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.261s] -- Configuring done
+[2.288s] -- Generating done
+[2.295s] -- Build files have been written to: /home/kang/ros2_ws/build/tribo
+[2.321s] [35m[1mConsolidate compiler generated dependencies of target sensorT[0m
+[2.321s] [35m[1mConsolidate compiler generated dependencies of target writer[0m
+[2.321s] [35m[1mConsolidate compiler generated dependencies of target sensorRFT[0m
+[2.403s] [ 16%] [32mBuilding CXX object CMakeFiles/sensorRFT.dir/src/sensor_RFT.cpp.o[0m
+[2.403s] [ 33%] [32mBuilding CXX object CMakeFiles/sensorT.dir/src/sensor_T.cpp.o[0m
+[2.411s] [ 50%] [32mBuilding CXX object CMakeFiles/writer.dir/src/writer.cpp.o[0m
+[7.238s] [ 66%] [32m[1mLinking CXX executable sensorT[0m
+[7.270s] [ 83%] [32m[1mLinking CXX executable sensorRFT[0m
+[7.462s] [ 83%] Built target sensorT
+[7.482s] [ 83%] Built target sensorRFT
+[14.921s] [100%] [32m[1mLinking CXX executable writer[0m
+[15.481s] [100%] Built target writer
+[15.490s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[15.492s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+[15.497s] -- Install configuration: ""
+[15.497s] -- Execute custom install script
+[15.497s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorT
+[15.498s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorRFT
+[15.498s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/writer
+[15.498s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/launch/tribo_launch.py
+[15.499s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/package_run_dependencies/tribo
+[15.499s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/parent_prefix_path/tribo
+[15.500s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.sh
+[15.500s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.dsv
+[15.501s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.sh
+[15.501s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.dsv
+[15.502s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.bash
+[15.502s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.sh
+[15.502s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.zsh
+[15.503s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.dsv
+[15.503s] -- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.dsv
+[15.510s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/packages/tribo
+[15.511s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig.cmake
+[15.511s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig-version.cmake
+[15.511s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/package.xml
+[15.513s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo

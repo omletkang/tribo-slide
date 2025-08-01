@@ -1,0 +1,19 @@
+[0.643s] Invoking command in '/home/kang/ros2_ws/build/tribo_plot': PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kang/ros2_ws/build/tribo_plot/build --no-deps symlink_data --force
+[0.898s] running develop
+[1.028s] running egg_info
+[1.029s] writing tribo_plot.egg-info/PKG-INFO
+[1.029s] writing dependency_links to tribo_plot.egg-info/dependency_links.txt
+[1.029s] writing entry points to tribo_plot.egg-info/entry_points.txt
+[1.030s] writing requirements to tribo_plot.egg-info/requires.txt
+[1.030s] writing top-level names to tribo_plot.egg-info/top_level.txt
+[1.032s] reading manifest file 'tribo_plot.egg-info/SOURCES.txt'
+[1.033s] writing manifest file 'tribo_plot.egg-info/SOURCES.txt'
+[1.034s] running build_ext
+[1.035s] Creating /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo-plot.egg-link (link to .)
+[1.035s] Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.036s] 
+[1.036s] Installed /home/kang/ros2_ws/build/tribo_plot
+[1.036s] running symlink_data
+[1.036s] symbolically linking /home/kang/ros2_ws/build/tribo_plot/resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+[1.037s] symbolically linking /home/kang/ros2_ws/build/tribo_plot/package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot
+[1.061s] Invoked command in '/home/kang/ros2_ws/build/tribo_plot' returned '0': PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kang/ros2_ws/build/tribo_plot/build --no-deps symlink_data --force

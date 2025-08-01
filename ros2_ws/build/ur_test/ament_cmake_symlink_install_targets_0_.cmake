@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kang/ros2_ws/build/ur_test/tcp_pose_node" "/home/kang/ros2_ws/build/ur_test/ur_command_node" "/home/kang/ros2_ws/build/ur_test/ur_command_listener" "TARGETS" "tcp_pose_node" "ur_command_node" "ur_command_listener" "DESTINATION" "lib/ur_test")

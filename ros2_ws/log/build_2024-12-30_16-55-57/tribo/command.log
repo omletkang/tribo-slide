@@ -1,0 +1,2 @@
+Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble: CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo
+Invoked command in '/home/kang/ros2_ws/build/tribo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble: CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/kang/ros2_ws/src/tribo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/tribo

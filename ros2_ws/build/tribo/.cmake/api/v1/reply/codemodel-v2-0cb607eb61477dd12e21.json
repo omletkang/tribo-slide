@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-24239a7b81b387f081b0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tribo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sensorRFT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensorRFT-189732c8c92cb2e251ef.json",
+					"name" : "sensorRFT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensorT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensorT-43aaf1bacf50d6ffddfb.json",
+					"name" : "sensorT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tribo_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tribo_uninstall-172ca8984e01ab577d8c.json",
+					"name" : "tribo_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-baa8d62b8ded94cb8037.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "writer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-writer-b8919a8bea72da215dc5.json",
+					"name" : "writer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kang/ros2_ws/build/tribo",
+		"source" : "/home/kang/ros2_ws/src/tribo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

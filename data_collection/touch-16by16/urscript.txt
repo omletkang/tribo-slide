@@ -1,0 +1,36 @@
+
+
+ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data:
+"def my_prog():
+
+	set_digital_out(1, True)
+	
+	 i = 0
+	 j = 0
+	 z = 0.24130
+	 h = 0.05
+
+	 while j < 16:
+		 x = -0.095 + 0.002 * i
+		 y = 0.575 + 0.002 * j
+		 textmsg(\"j = \", j)
+		 
+		 movep(p[x, y, z + h, 1.220, 1.176, 1.184], a=0.2, v=0.03)
+		 movep(p[x, y, z, 1.220, 1.176, 1.184], a=0.2, v=0.05)
+		 sleep(0.5)
+		 movep(p[x, y, z + h, 1.220, 1.176, 1.184], a=0.2, v=0.05)
+		 sleep(0.1)
+		 movep(p[x, y, z, 1.220, 1.176, 1.184], a=0.2, v=0.05)
+		 sleep(0.5)
+		 movep(p[x, y, z + h, 1.220, 1.176, 1.184], a=0.2, v=0.05)
+		 
+		 i = i + 1
+		 if i > 15:
+			 i = 0
+			 j = j + 1
+		 end
+	 end
+
+  textmsg(\"motion finished\")
+
+end"}'

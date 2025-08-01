@@ -1,0 +1,28 @@
+[0.019s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[0.328s] [ 66%] Built target writer
+[0.329s] [ 66%] Built target sensorRFT
+[0.330s] [100%] Built target sensorT
+[0.336s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[0.347s] Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+[0.353s] -- Install configuration: ""
+[0.353s] -- Execute custom install script
+[0.354s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorT
+[0.354s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/sensorRFT
+[0.354s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/lib/tribo/writer
+[0.355s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/launch/tribo_launch.py
+[0.355s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/package_run_dependencies/tribo
+[0.356s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/parent_prefix_path/tribo
+[0.356s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.sh
+[0.356s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/ament_prefix_path.dsv
+[0.357s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.sh
+[0.357s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/environment/path.dsv
+[0.357s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.bash
+[0.357s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.sh
+[0.358s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.zsh
+[0.358s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/local_setup.dsv
+[0.358s] -- Symlinking: /home/kang/ros2_ws/install/tribo/share/tribo/package.dsv
+[0.364s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/ament_index/resource_index/packages/tribo
+[0.364s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig.cmake
+[0.364s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/cmake/triboConfig-version.cmake
+[0.364s] -- Up-to-date symlink: /home/kang/ros2_ws/install/tribo/share/tribo/package.xml
+[0.366s] Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo

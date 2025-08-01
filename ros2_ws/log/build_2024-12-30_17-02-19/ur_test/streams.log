@@ -1,0 +1,81 @@
+[0.241s] Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/ur_test -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/ur_test
+[0.249s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.352s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.359s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.624s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.629s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.635s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.659s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.686s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.687s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.461s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.510s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[5.523s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.673s] -- Configuring done
+[5.682s] [33mCMake Warning at CMakeLists.txt:18 (add_executable):
+[5.682s]   Cannot generate a safe runtime search path for target tcp_pose_node because
+[5.682s]   files in some directories may conflict with libraries in implicit
+[5.682s]   directories:
+[5.682s] 
+[5.682s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.682s]       /home/kang/miniconda3/lib
+[5.682s] 
+[5.683s]   Some of these libraries may not be found correctly.
+[5.683s] 
+[5.683s] [0m
+[5.684s] [33mCMake Warning at CMakeLists.txt:19 (add_executable):
+[5.685s]   Cannot generate a safe runtime search path for target ur_command_node
+[5.685s]   because files in some directories may conflict with libraries in implicit
+[5.685s]   directories:
+[5.685s] 
+[5.685s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.685s]       /home/kang/miniconda3/lib
+[5.685s] 
+[5.685s]   Some of these libraries may not be found correctly.
+[5.685s] 
+[5.685s] [0m
+[5.686s] [33mCMake Warning at CMakeLists.txt:20 (add_executable):
+[5.686s]   Cannot generate a safe runtime search path for target ur_command_listener
+[5.686s]   because files in some directories may conflict with libraries in implicit
+[5.686s]   directories:
+[5.686s] 
+[5.687s]     runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[5.687s]       /home/kang/miniconda3/lib
+[5.687s] 
+[5.687s]   Some of these libraries may not be found correctly.
+[5.687s] 
+[5.687s] [0m
+[5.687s] -- Generating done
+[5.694s] -- Build files have been written to: /home/kang/ros2_ws/build/ur_test
+[5.704s] Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/ros2_ws/src/ur_test -DCMAKE_INSTALL_PREFIX=/home/kang/ros2_ws/install/ur_test
+[5.705s] Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[5.735s] [35m[1mConsolidate compiler generated dependencies of target tcp_pose_node[0m
+[5.735s] [35m[1mConsolidate compiler generated dependencies of target ur_command_listener[0m
+[5.735s] [35m[1mConsolidate compiler generated dependencies of target ur_command_node[0m
+[5.751s] [ 33%] Built target ur_command_node
+[5.751s] [ 66%] Built target tcp_pose_node
+[5.752s] [100%] Built target ur_command_listener
+[5.759s] Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[5.761s] Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test
+[5.766s] -- Install configuration: ""
+[5.766s] -- Execute custom install script
+[5.766s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/tcp_pose_node
+[5.766s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_node
+[5.766s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/lib/ur_test/ur_command_listener
+[5.766s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/package_run_dependencies/ur_test
+[5.767s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/parent_prefix_path/ur_test
+[5.767s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.sh
+[5.767s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/ament_prefix_path.dsv
+[5.767s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.sh
+[5.768s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/environment/path.dsv
+[5.768s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.bash
+[5.768s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.sh
+[5.768s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.zsh
+[5.769s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/local_setup.dsv
+[5.769s] -- Symlinking: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.dsv
+[5.774s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ament_index/resource_index/packages/ur_test
+[5.774s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig.cmake
+[5.774s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/cmake/ur_testConfig-version.cmake
+[5.774s] -- Up-to-date symlink: /home/kang/ros2_ws/install/ur_test/share/ur_test/package.xml
+[5.776s] Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test

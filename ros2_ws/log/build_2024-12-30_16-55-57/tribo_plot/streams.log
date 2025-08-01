@@ -1,0 +1,22 @@
+[0.720s] Invoking command in '/home/kang/ros2_ws/build/tribo_plot': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kang/ros2_ws/build/tribo_plot/build --no-deps symlink_data
+[1.018s] running develop
+[1.258s] running egg_info
+[1.258s] creating tribo_plot.egg-info
+[1.271s] writing tribo_plot.egg-info/PKG-INFO
+[1.272s] writing dependency_links to tribo_plot.egg-info/dependency_links.txt
+[1.272s] writing entry points to tribo_plot.egg-info/entry_points.txt
+[1.272s] writing requirements to tribo_plot.egg-info/requires.txt
+[1.273s] writing top-level names to tribo_plot.egg-info/top_level.txt
+[1.273s] writing manifest file 'tribo_plot.egg-info/SOURCES.txt'
+[1.300s] reading manifest file 'tribo_plot.egg-info/SOURCES.txt'
+[1.301s] writing manifest file 'tribo_plot.egg-info/SOURCES.txt'
+[1.317s] running build_ext
+[1.318s] Creating /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo-plot.egg-link (link to .)
+[1.318s] Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.319s] 
+[1.319s] Installed /home/kang/ros2_ws/build/tribo_plot
+[1.319s] running symlink_data
+[1.320s] creating /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+[1.320s] symbolically linking /home/kang/ros2_ws/build/tribo_plot/resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+[1.320s] symbolically linking /home/kang/ros2_ws/build/tribo_plot/package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot
+[1.345s] Invoked command in '/home/kang/ros2_ws/build/tribo_plot' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kang/ros2_ws/build/tribo_plot/build --no-deps symlink_data

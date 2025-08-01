@@ -1,0 +1,251 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/home/kang/miniconda3/envs/tribo/bin/colcon', 'build']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f92e22bb550>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f92e24f41f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f92e24f41f0>>)
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.142s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kang/ros2_ws'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tribo' with type 'ros.ament_cmake' and name 'tribo'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribo_plot) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tribo_plot' with type 'ros.ament_python' and name 'tribo_plot'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_test) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_test' with type 'ros.ament_cmake' and name 'ur_test'
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_clean_first' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_force_configure' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'ament_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.174s] DEBUG:colcon.colcon_core.verb:Building package 'tribo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/ros2_ws/build/tribo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/ros2_ws/install/tribo', 'merge_install': False, 'path': '/home/kang/ros2_ws/src/tribo', 'symlink_install': False, 'test_result_base': None}
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_target' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'tribo_plot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/ros2_ws/build/tribo_plot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/ros2_ws/install/tribo_plot', 'merge_install': False, 'path': '/home/kang/ros2_ws/src/tribo_plot', 'symlink_install': False, 'test_result_base': None}
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_target' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'ur_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'ur_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/ros2_ws/build/ur_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/ros2_ws/install/ur_test', 'merge_install': False, 'path': '/home/kang/ros2_ws/src/ur_test', 'symlink_install': False, 'test_result_base': None}
+[0.175s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.176s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kang/ros2_ws/src/tribo' with build type 'ament_cmake'
+[0.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kang/ros2_ws/src/tribo'
+[0.178s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.178s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.178s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.181s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kang/ros2_ws/src/tribo_plot' with build type 'ament_python'
+[0.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo_plot', 'ament_prefix_path')
+[0.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.ps1'
+[0.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.dsv'
+[0.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.sh'
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.187s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kang/ros2_ws/src/ur_test' with build type 'ament_cmake'
+[0.187s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kang/ros2_ws/src/ur_test'
+[0.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[0.308s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kang/ros2_ws/src/tribo_plot'
+[0.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[0.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/tribo -- -j16 -l16
+[0.340s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/ros2_ws/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+[0.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --build /home/kang/ros2_ws/build/ur_test -- -j16 -l16
+[0.352s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo)
+[0.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/ros2_ws/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/tribo
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo' for CMake module files
+[0.354s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo' for CMake config files
+[0.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo', 'cmake_prefix_path')
+[0.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.ps1'
+[0.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.dsv'
+[0.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.sh'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/bin'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib/pkgconfig/tribo.pc'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib/python3.10/site-packages'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/bin'
+[0.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.ps1'
+[0.357s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/ros2_ws/install/tribo/share/tribo/package.dsv'
+[0.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.sh'
+[0.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.bash'
+[0.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.zsh'
+[0.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/ros2_ws/install/tribo/share/colcon-core/packages/tribo)
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/ros2_ws/build/ur_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test
+[0.377s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo)
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo' for CMake module files
+[0.377s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo' for CMake config files
+[0.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo', 'cmake_prefix_path')
+[0.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.ps1'
+[0.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.dsv'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo/share/tribo/hook/cmake_prefix_path.sh'
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib'
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/bin'
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib/pkgconfig/tribo.pc'
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/lib/python3.10/site-packages'
+[0.381s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo/bin'
+[0.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.ps1'
+[0.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/ros2_ws/install/tribo/share/tribo/package.dsv'
+[0.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.sh'
+[0.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.bash'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo/share/tribo/package.zsh'
+[0.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/ros2_ws/install/tribo/share/colcon-core/packages/tribo)
+[0.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_test)
+[0.385s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test' for CMake module files
+[0.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/ros2_ws/build/ur_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/ros2_ws/install/tribo_plot:/opt/ros/humble CONDA_PROMPT_MODIFIER=(tribo) /usr/bin/cmake --install /home/kang/ros2_ws/build/ur_test
+[0.385s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test' for CMake config files
+[0.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_test', 'cmake_prefix_path')
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.ps1'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.dsv'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.sh'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/bin'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib/pkgconfig/ur_test.pc'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib/python3.10/site-packages'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/bin'
+[0.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.ps1'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.dsv'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.sh'
+[0.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.bash'
+[0.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.zsh'
+[0.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/ros2_ws/install/ur_test/share/colcon-core/packages/ur_test)
+[0.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_test)
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test' for CMake module files
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test' for CMake config files
+[0.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_test', 'cmake_prefix_path')
+[0.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.ps1'
+[0.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.dsv'
+[0.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/ur_test/share/ur_test/hook/cmake_prefix_path.sh'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/bin'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib/pkgconfig/ur_test.pc'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/lib/python3.10/site-packages'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/ur_test/bin'
+[0.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.sh'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.bash'
+[0.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/ur_test/share/ur_test/package.zsh'
+[0.412s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/ros2_ws/install/ur_test/share/colcon-core/packages/ur_test)
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/ros2_ws/src/tribo_plot': CONDA_PROMPT_MODIFIER=(tribo) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/home/kang/miniconda3/envs/tribo/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /home/kang/miniconda3/envs/tribo/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot' for CMake module files
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/ros2_ws/src/tribo_plot' returned '0': CONDA_PROMPT_MODIFIER=(tribo) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/home/kang/miniconda3/envs/tribo/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /home/kang/miniconda3/envs/tribo/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot' for CMake config files
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot/lib'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot/bin'
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot/lib/pkgconfig/tribo_plot.pc'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages'
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo_plot', 'pythonpath')
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/pythonpath.ps1'
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/pythonpath.dsv'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/hook/pythonpath.sh'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/kang/ros2_ws/install/tribo_plot/bin'
+[0.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo_plot)
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/package.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/package.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/package.sh'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/package.bash'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/ros2_ws/install/tribo_plot/share/tribo_plot/package.zsh'
+[0.847s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/ros2_ws/install/tribo_plot/share/colcon-core/packages/tribo_plot)
+[0.847s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.848s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.848s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.848s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.850s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[0.864s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.864s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.864s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.864s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.864s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/ros2_ws/install/local_setup.ps1'
+[0.865s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kang/ros2_ws/install/_local_setup_util_ps1.py'
+[0.867s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/ros2_ws/install/setup.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/ros2_ws/install/local_setup.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kang/ros2_ws/install/_local_setup_util_sh.py'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/ros2_ws/install/setup.sh'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/ros2_ws/install/local_setup.bash'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/ros2_ws/install/setup.bash'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/ros2_ws/install/local_setup.zsh'
+[0.872s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/ros2_ws/install/setup.zsh'

@@ -1,0 +1,1 @@
+/home/kang/ros2_ws/build/tribo/ament_cmake_core/triboConfig-version.cmake

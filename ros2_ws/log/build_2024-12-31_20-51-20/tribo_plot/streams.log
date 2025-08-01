@@ -1,0 +1,27 @@
+[0.632s] Invoking command in '/home/kang/ros2_ws/src/tribo_plot': CONDA_PROMPT_MODIFIER=(tribo) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/home/kang/miniconda3/envs/tribo/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /home/kang/miniconda3/envs/tribo/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data
+[0.799s] running egg_info
+[0.807s] writing ../../build/tribo_plot/tribo_plot.egg-info/PKG-INFO
+[0.808s] writing dependency_links to ../../build/tribo_plot/tribo_plot.egg-info/dependency_links.txt
+[0.808s] writing entry points to ../../build/tribo_plot/tribo_plot.egg-info/entry_points.txt
+[0.808s] writing requirements to ../../build/tribo_plot/tribo_plot.egg-info/requires.txt
+[0.808s] writing top-level names to ../../build/tribo_plot/tribo_plot.egg-info/top_level.txt
+[0.826s] reading manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[0.827s] writing manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[0.827s] running build
+[0.827s] running build_py
+[0.827s] copying tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[0.828s] copying tribo_plot/__init__.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[0.828s] running install
+[0.832s] running install_lib
+[0.840s] copying /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.841s] byte-compiling /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/plot_sensor.py to plot_sensor.cpython-310.pyc
+[0.842s] running install_data
+[0.842s] copying resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+[0.842s] copying package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot
+[0.842s] running install_egg_info
+[0.851s] removing '/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.852s] Copying ../../build/tribo_plot/tribo_plot.egg-info to /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info
+[0.852s] running install_scripts
+[0.917s] Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[0.917s] writing list of installed files to '/home/kang/ros2_ws/build/tribo_plot/install.log'
+[0.944s] Invoked command in '/home/kang/ros2_ws/src/tribo_plot' returned '0': CONDA_PROMPT_MODIFIER=(tribo) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/home/kang/miniconda3/envs/tribo/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /home/kang/miniconda3/envs/tribo/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data

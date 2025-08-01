@@ -1,0 +1,35 @@
+[0.796s] Invoking command in '/home/kang/ros2_ws/src/tribo_plot': CONDA_PROMPT_MODIFIER=(guest) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data
+[0.974s] running egg_info
+[0.986s] writing ../../build/tribo_plot/tribo_plot.egg-info/PKG-INFO
+[0.987s] writing dependency_links to ../../build/tribo_plot/tribo_plot.egg-info/dependency_links.txt
+[0.987s] writing entry points to ../../build/tribo_plot/tribo_plot.egg-info/entry_points.txt
+[0.988s] writing requirements to ../../build/tribo_plot/tribo_plot.egg-info/requires.txt
+[0.988s] writing top-level names to ../../build/tribo_plot/tribo_plot.egg-info/top_level.txt
+[1.010s] reading manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[1.011s] writing manifest file '../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[1.011s] running build
+[1.012s] running build_py
+[1.012s] copying tribo_plot/models.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[1.013s] copying tribo_plot/plot_sensor.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[1.014s] copying tribo_plot/__init__.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[1.014s] copying tribo_plot/app1.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[1.014s] copying tribo_plot/sensorT_fake.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot
+[1.015s] copying tribo_plot/utils/__init__.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/utils
+[1.015s] copying tribo_plot/utils/widget.py -> /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/utils
+[1.016s] running install
+[1.019s] running install_lib
+[1.031s] copying /home/kang/ros2_ws/build/tribo_plot/build/lib/tribo_plot/app1.py -> /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[1.033s] byte-compiling /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app1.py to app1.cpython-310.pyc
+[1.033s] running install_data
+[1.034s] copying resource/tribo_plot -> /home/kang/ros2_ws/install/tribo_plot/share/ament_index/resource_index/packages
+[1.035s] copying package.xml -> /home/kang/ros2_ws/install/tribo_plot/share/tribo_plot
+[1.036s] running install_egg_info
+[1.049s] removing '/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.050s] Copying ../../build/tribo_plot/tribo_plot.egg-info to /home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info
+[1.051s] running install_scripts
+[1.145s] Installing app1 script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.145s] Installing models script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.146s] Installing plot_sensor script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.146s] Installing sensorT_fake script to /home/kang/ros2_ws/install/tribo_plot/lib/tribo_plot
+[1.146s] writing list of installed files to '/home/kang/ros2_ws/build/tribo_plot/install.log'
+[1.164s] Invoked command in '/home/kang/ros2_ws/src/tribo_plot' returned '0': CONDA_PROMPT_MODIFIER=(guest) PYTHONPATH=/home/kang/ros2_ws/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tribo_plot build --build-base /home/kang/ros2_ws/build/tribo_plot/build install --record /home/kang/ros2_ws/build/tribo_plot/install.log --single-version-externally-managed install_data
