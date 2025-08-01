@@ -9,8 +9,7 @@ from dataclasses import dataclass
 import tyro
 
 from model.mlstm_fcn import MLSTM_FCN
-from utils.generic_utils import load_dataset_at, calculate_dataset_metrics
-from utils.torch_utils import MyDataset
+from utils.generic_utils import MyDataset, load_dataset_at, calculate_dataset_metrics
 from utils.json_logger import JsonLogger
 
 @dataclass

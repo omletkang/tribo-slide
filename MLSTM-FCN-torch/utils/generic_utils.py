@@ -1,6 +1,8 @@
 import numpy as np
 import os
 from sklearn.preprocessing import StandardScaler
+import torch
+from torch.utils.data import Dataset
 # import matplotlib as mpl
 # import matplotlib.pylab as plt
 
@@ -8,6 +10,18 @@ from sklearn.preprocessing import StandardScaler
 
 TRAIN_FILES = '../data/tribo-250103/'
 TEST_FILES = '../data/tribo-250103/'
+
+class MyDataset(Dataset):
+    def __init__(self, x, y):
+        self.x = torch.tensor(x, dtype=torch.float32)
+        self.y = torch.tensor(y, dtype=torch.float32) # Regression
+
+    def __len__(self):
+        return len(self.x)
+    
+    def __getitem__(self, idx):
+        return self.x[idx], self.y[idx]
+    
 
 def load_dataset_at(index, fold_index=None, normalize_timeseries=False, verbose=True):
     if verbose: print("Loading train / test dataset : ", TRAIN_FILES, TEST_FILES)
