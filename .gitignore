@@ -1,0 +1,28 @@
+# ROS2 build and install artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+
+# Data
+*.csv
+# *.npy
+*.pkl
+*.h5
+
+# Models
+*.pt
+*.pth
+*.ckpt
+
+# Misc
+.DS_Store
+.env
+.vscode/
+.idea/
