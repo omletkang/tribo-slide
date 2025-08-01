@@ -4,9 +4,11 @@ from torch.utils.data import Dataset, DataLoader
 import numpy as np
 import os
 import tqdm
+import joblib
 
 from model.mlstm_fcn import MLSTM_FCN
 from utils.generic_utils import load_dataset_at, calculate_dataset_metrics
+from utils.json_logger import JsonLogger
 
 class MyDataset(Dataset):
     def __init__(self, x, y):
@@ -21,12 +23,12 @@ class MyDataset(Dataset):
 
 
 class BaseWorkspace():
-    def __init__(self, epoch=1000, learning_rate=1e-3, batch_size=128, model_dir='output',
+    def __init__(self, epoch=1000, learning_rate=1e-3, batch_size=128, output_dir='output',
                  normalize_timeseries=True, gpu_idx=1):
         self.total_epoch = epoch
         self.batch_size = batch_size
-        self.model_dir = model_dir
-        os.makedirs(self.model_dir, exist_ok=True)
+        self.output_dir = output_dir
+        os.makedirs(self.output_dir, exist_ok=True)
 
         seed = 42
         torch.manual_seed(seed)
@@ -39,6 +41,8 @@ class BaseWorkspace():
                                          normalize_timeseries=normalize_timeseries, verbose=True)
         X_train, y_train, X_test, y_test, is_timeseries, scaler_X, scaler_y = dataset_packet
         self.scaler_y = scaler_y
+        joblib.dump(scaler_X, os.path.join(self.output_dir, 'scaler_X.pkl'))
+        joblib.dump(self.scaler_y, os.path.join(self.output_dir, 'scaler_y.pkl'))
         max_timesteps, max_nb_variables = calculate_dataset_metrics(X_train)
         num_classes = y_train.shape[1]
 
@@ -82,9 +86,9 @@ class BaseWorkspace():
                 'val_rmse': rmse,
                 'model_state_dict': self.model.state_dict(),
                 'optimizer_state_dict': self.optimizer.state_dict()
-            }, os.path.join(self.model_dir, model_path))
+            }, os.path.join(self.output_dir, model_path))
         else:
-            best_model_path = os.path.join(self.model_dir, f"model_best.pth")
+            best_model_path = os.path.join(self.output_dir, f"model_best.pth")
             torch.save({
                 'epoch': self.epoch,
                 'val_rmse': rmse,
@@ -122,56 +126,69 @@ class BaseWorkspace():
         return avg_loss, rmse
     
     def run(self):
+
         # Train Loop
-        for local_epoch_idx in range(self.total_epoch):
-            self.model.train()
-            train_losses = []
+        log_path = os.path.join(self.output_dir, 'train_log.json.txt')
+        with JsonLogger(log_path) as json_logger:
+            for local_epoch_idx in range(self.total_epoch):
+                self.model.train()
+                train_losses = []
 
-            with tqdm.tqdm(self.train_loader, desc=f"Training epoch {self.epoch+1}") as tepoch:
-                for batch_idx, (X, y) in enumerate(tepoch):
-                    X, y = X.to(self.device), y.to(self.device)
+                with tqdm.tqdm(self.train_loader, desc=f"Training epoch {self.epoch+1}") as tepoch:
+                    for batch_idx, (X, y) in enumerate(tepoch):
+                        X, y = X.to(self.device), y.to(self.device)
 
-                    # Compute prediction error
-                    pred = self.model(X)
-                    loss = self.loss_fn(pred, y)
+                        # Compute prediction error
+                        pred = self.model(X)
+                        loss = self.loss_fn(pred, y)
 
-                    # Backpropagation
-                    loss.backward()
-                    self.optimizer.step()
-                    self.optimizer.zero_grad()
+                        # Backpropagation
+                        loss.backward()
+                        self.optimizer.step()
+                        self.optimizer.zero_grad()
 
-                    # Logging
-                    train_losses.append(loss.item())
-                    tepoch.set_postfix(loss=loss.item())
-                    
-                    # is_last_batch = (batch_idx == (len(train_loader)-1))
-                    # if not is_last_batch:
-                        # pass
-                    self.global_step += 1
+                        # Logging
+                        train_losses.append(loss.item())
+                        tepoch.set_postfix(loss=loss.item())
+                        
+                        # is_last_batch = (batch_idx == (len(train_loader)-1))
+                        # if not is_last_batch:
+                            # pass
+                        self.global_step += 1
 
-            avg_train_loss = np.mean(train_losses)
+                avg_train_loss = np.mean(train_losses)
 
-            # Evalutation
-            val_loss, val_rmse = self.validate()
+                # Evalutation
+                val_loss, val_rmse = self.validate()
 
-            # Scheduler step
-            old_lr = self.optimizer.param_groups[0]['lr']
-            self.scheduler.step(val_loss)
-            new_lr = self.optimizer.param_groups[0]['lr']
-            if new_lr < old_lr:
-                print(f"Learning rate reduced: {old_lr:.6f} → {new_lr:.6f}")
+                # Scheduler step
+                old_lr = self.optimizer.param_groups[0]['lr']
+                self.scheduler.step(val_loss)
+                new_lr = self.optimizer.param_groups[0]['lr']
+                if new_lr < old_lr:
+                    print(f"Learning rate reduced: {old_lr:.6f} → {new_lr:.6f}")
 
-            # Save Chackpoint (every 100 epoch)
-            if (self.epoch + 1) % 100 == 0:
-                self.save_checkpoint(val_rmse, is_best=False)
+                # Log results
+                log_dict = {
+                    'epoch': self.epoch + 1,
+                    'train_loss': avg_train_loss,
+                    'val_loss': val_loss,
+                    'val_rmse': val_rmse,
+                    'lr': new_lr
+                }
+                json_logger.log(log_dict)
 
-                if val_rmse < self.best_val_rmse:
-                    self.best_val_rmse = val_rmse
-                    self.save_checkpoint(val_rmse, is_best=True)
-            
-            # Finsihed one epoch
-            print(f"Epoch {self.epoch+1}/{self.total_epoch} - Avg Loss: {avg_train_loss:.4f}")
-            self.epoch += 1
+                # Save Chackpoint (every 100 epoch)
+                if (self.epoch + 1) % 100 == 0:
+                    self.save_checkpoint(val_rmse, is_best=False)
+
+                # if ((self.epoch + 1) > 100) and (val_rmse < self.best_val_rmse):
+                #     self.best_val_rmse = val_rmse
+                #     self.save_checkpoint(val_rmse, is_best=True)
+                
+                # Finsihed one epoch
+                print(f"Epoch {self.epoch+1}/{self.total_epoch} - Avg Loss: {avg_train_loss:.4f}")
+                self.epoch += 1
 
 if __name__ == "__main__":
     
