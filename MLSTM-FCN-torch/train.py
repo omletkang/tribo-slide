@@ -1,33 +1,33 @@
 import torch
 from torch import nn
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 import numpy as np
 import os
 import tqdm
 import joblib
+from dataclasses import dataclass
+import tyro
 
 from model.mlstm_fcn import MLSTM_FCN
 from utils.generic_utils import load_dataset_at, calculate_dataset_metrics
+from utils.torch_utils import MyDataset
 from utils.json_logger import JsonLogger
 
-class MyDataset(Dataset):
-    def __init__(self, x, y):
-        self.x = torch.tensor(x, dtype=torch.float32)
-        self.y = torch.tensor(y, dtype=torch.float32) # Regression
-
-    def __len__(self):
-        return len(self.x)
-    
-    def __getitem__(self, idx):
-        return self.x[idx], self.y[idx]
-
+@dataclass
+class Args:
+    seed: int = 42
+    epoch: int = 1000
+    learning_rate = 1e-3
+    batch_size: int = 128
+    output_dir: str = 'output'
+    normalize_timeseries: bool = True
+    gpu_idx: int = 1
 
 class BaseWorkspace():
-    def __init__(self, epoch=1000, learning_rate=1e-3, batch_size=128, output_dir='output',
-                 normalize_timeseries=True, gpu_idx=1):
-        self.total_epoch = epoch
-        self.batch_size = batch_size
-        self.output_dir = output_dir
+    def __init__(self, cfg: Args):
+        self.total_epoch = cfg.epoch
+        self.batch_size = cfg.batch_size
+        self.output_dir = cfg.output_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
         seed = 42
@@ -38,7 +38,7 @@ class BaseWorkspace():
         # Load Data
         dataset_id = 0
         dataset_packet = load_dataset_at(dataset_id, fold_index=None, 
-                                         normalize_timeseries=normalize_timeseries, verbose=True)
+                                         normalize_timeseries=cfg.normalize_timeseries, verbose=True)
         X_train, y_train, X_test, y_test, is_timeseries, scaler_X, scaler_y = dataset_packet
         self.scaler_y = scaler_y
         joblib.dump(scaler_X, os.path.join(self.output_dir, 'scaler_X.pkl'))
@@ -62,14 +62,14 @@ class BaseWorkspace():
                                num_classes=num_classes)
 
         self.loss_fn = nn.MSELoss() # nn.CrossEntropyLoss()
-        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
+        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=cfg.learning_rate)
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             self.optimizer, mode='min', factor=factor, patience=100,
             cooldown=0, min_lr=1e-4
         )
 
         # Load Model
-        self.device = torch.device(f'cuda:{gpu_idx}' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device(f'cuda:{cfg.gpu_idx}' if torch.cuda.is_available() else 'cpu')
         print(f"Using {self.device} device")
         self.model.to(self.device)
 
@@ -192,6 +192,7 @@ class BaseWorkspace():
 
 if __name__ == "__main__":
     
-    workspace = BaseWorkspace(gpu_idx=0)
+    cfg = tyro.cli(Args)
+    workspace = BaseWorkspace(cfg)
     workspace.run()
 
