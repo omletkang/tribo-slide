@@ -12,7 +12,7 @@ __pycache__/
 
 # Data
 *.csv
-# *.npy
+*.npy
 *.pkl
 *.h5
 
