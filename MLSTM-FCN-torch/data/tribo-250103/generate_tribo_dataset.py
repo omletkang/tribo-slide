@@ -4,26 +4,31 @@ np.random.seed(1000)
 #train and test size are 360 and 585
 from scipy.io import loadmat
 
-def generate_dataset(win_size=50, jump=20):
+def generate_dataset(win_size=50, jump=20, n_test=5):
 
     libras_dataset = r""
 
     ''' Load train set '''
-    data_dict = loadmat(libras_dataset + "data_cell_slide_spline.mat")
-    raw_data = data_dict['data_cell']
+    data_shape_dict = loadmat(libras_dataset + "data_cell_slide_shape.mat")
+    data_spline_dict = loadmat(libras_dataset + "data_cell_slide_spline.mat")
+    shape_rawdata = data_shape_dict['data_cell']
+    spline_rawdata = data_spline_dict['data_cell']
+    print(f"shape data shape: {shape_rawdata.shape}")
+    print(f"spline data shape: {spline_rawdata.shape}")
+    raw_data = np.concatenate((shape_rawdata, spline_rawdata), axis=1)
     print(f'raw data type and size: {type(raw_data)} {raw_data.shape}')
 
-    nb_spline = raw_data.shape[1]
-    n_test = 5
-    print(f"number of spline: {nb_spline}")
+    nb_cell = raw_data.shape[1]
+    n_test = n_test
+    print(f"number of task: {nb_cell}")
 
     raw_data_train = np.empty((0, 6))
     raw_data_test = np.empty((0, 6))
 
-    for i in range(nb_spline - n_test):
+    for i in range(nb_cell - n_test):
         raw_data_train = np.concatenate((raw_data_train, raw_data[0,i]), axis=0)
 
-    for i in range(nb_spline - n_test, nb_spline):
+    for i in range(nb_cell - n_test, nb_cell):
         raw_data_test = np.concatenate((raw_data_test, raw_data[0,i]), axis=0)
 
     print(f'Raw Train data set shape: {raw_data_train.shape}')
@@ -80,7 +85,7 @@ def generate_dataset(win_size=50, jump=20):
 
 if __name__ == "__main__":
 
-    generate_dataset(win_size=50)
+    generate_dataset(win_size=50, n_test=5)
 
 
 

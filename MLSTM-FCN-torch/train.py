@@ -16,7 +16,7 @@ from utils.json_logger import JsonLogger
 class Args:
     seed: int = 42
     epoch: int = 1000
-    learning_rate = 1e-3
+    learning_rate: float = 1e-3
     batch_size: int = 128
     output_dir: str = 'output'
     normalize_timeseries: bool = True
