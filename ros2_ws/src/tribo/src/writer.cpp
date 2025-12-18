@@ -43,10 +43,10 @@ std::mutex data_mutex;
 void memo()
 {
     ofstream robot_pos, robot_jpos, loadcell, sensor_T;
-    robot_pos.open("/home/kang/Documents/tribo/data/Log_Robot_Pos_.txt");
-    robot_jpos.open("/home/kang/Documents/tribo/data/Log_Robot_JPos_.txt");
-    sensor_T.open("/home/kang/Documents/tribo/data/Log_Sensor_T_.txt");
-    loadcell.open("/home/kang/Documents/tribo/data/Log_Loadcell_.txt");
+    robot_pos.open("/home/kang/Documents/tribo-slide/data_collection/data/Log_Robot_Pos_.txt");
+    robot_jpos.open("/home/kang/Documents/trib-slide/data_collection/data/Log_Robot_JPos_.txt");
+    sensor_T.open("/home/kang/Documents/tribo-slide/data_collection/data/Log_Sensor_T_.txt");
+    loadcell.open("/home/kang/Documents/tribo-slide/data_collection/data/Log_Loadcell_.txt");
     
     double temp_robotArmPos[robotArmPosDataNum];
     double temp_robotArmJPos[robotArmJPosDataNum];
@@ -152,7 +152,7 @@ private:
   {
     try
     {
-        auto transform = tf_buffer_.lookupTransform("base", "tool0", tf2::TimePointZero);
+        auto transform = tf_buffer_.lookupTransform("base", "tool0_controller", tf2::TimePointZero);
         robotArmPos[0] = transform.transform.translation.x; // x
         robotArmPos[1] = transform.transform.translation.y; // y
         robotArmPos[2] = transform.transform.translation.z; // z

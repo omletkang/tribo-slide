@@ -104,7 +104,7 @@ def main():
     # Parameters
     velocity = 0.04  # Robot velocity in meters per second
     frequency = 20   # Command frequency in Hz
-    shape = 'diagonal4'  # Shape of the path ('square', 'triangle', 'line')
+    shape = 'square'  # Shape of the path ('square', 'triangle', 'line')
     
 
     # Generate the path

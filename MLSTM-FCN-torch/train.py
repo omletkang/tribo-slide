@@ -20,7 +20,7 @@ class Args:
     batch_size: int = 128
     output_dir: str = 'output'
     normalize_timeseries: bool = True
-    gpu_idx: int = 1
+    gpu_idx: int = 0
 
 class BaseWorkspace():
     def __init__(self, cfg: Args):

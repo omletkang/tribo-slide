@@ -1,7 +1,11 @@
 Open UR ros2 driver
 
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.1.101 headless_mode:=true kinematics_config:=${HOME}/my_robot_calibration.yaml
-
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.10.2 headless_mode:=true kinematics_config:=${HOME}/my_robot_calibration.yaml
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.10.2 headless_mode:=true
+ros2 launch ur_robot_driver ur_control.launch.py \
+  ur_type:=ur5e \
+  robot_ip:=192.168.10.2 \
+  kinematics_params_file:=${HOME}/my_robot_calibration.yaml
 ----
 How to get Z offest of UR robot for tribo sensor measurement
 """
@@ -19,22 +23,31 @@ ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{d
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
 "movep(p[-0.095, 0.57500, 0.24230, 1.220, 1.176, 1.184], a=0.2, v=0.05)"}'
 
+# 2025-12-16
+ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
+"movep(p[-0.638, -0.01850, 0.17200, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+
+ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
+"movep(p[-0.638, -0.01850, 0.09500, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+
+ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
+"movep(p[-0.638, -0.01850, 0.06525, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 -----
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data:
 "def my_prog():
 
   set_digital_out(1, True)
-    z = 0.241
-    movep(p[-0.095, 0.57500, z + 0.10,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+    z = 0.06525
+    movep(p[-0.625, -0.00400, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
     sleep(2.)
 
-    movep(p[-0.095, 0.57500, z, 1.220, 1.176, 1.184], a=0.2, v=0.04)
+    movep(p[-0.625, -0.00400, z, 0.0, -1.57, 0.0], a=0.2, v=0.04)
 	
 	sleep(2.)
 
-	movep(p[-0.095, 0.57500, z + 0.10,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[-0.625, -0.00400, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
   textmsg(\"motion finished\")
 
@@ -47,31 +60,28 @@ ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{d
 "def my_prog():
 
   set_digital_out(1, True)
-    z = 0.24130
-	d = 0.03
-    movep(p[-0.095, 0.57500, z + 0.10,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+    x = -0.638
+    y = -0.01850
+    z = 0.08000
+	  d = 0.03
+    movep(p[x, y, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
     sleep(2.)
 
-    movep(p[-0.095, 0.57500, z, 1.220, 1.176, 1.184], a=0.2, v=0.04)
+    movep(p[x, y, z, 0.0, -1.57, 0.0], a=0.2, v=0.04)
 	sleep(1.)
-	movep(p[-0.095 + d, 0.57500, z,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[x + d, y, z,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 	sleep(1.)
-	movep(p[-0.095 + d, 0.57500 + d, z,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[x + d, y + d, z,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 	sleep(1.)
-	movep(p[-0.095 , 0.57500 + d, z,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[x , y + d, z,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 	sleep(1.)
-	movep(p[-0.095, 0.57500, z,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[x, y, z,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 	sleep(1.)
 
-	movep(p[-0.095, 0.57500, z + 0.10,  1.220, 1.176, 1.184], a=0.2, v=0.04)
+	movep(p[x, y, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
   textmsg(\"motion finished\")
 
 end"}'
 
-
-----
-ros2 run tribo sensorT
-ros2 run tribo sensorRFT
-ros2 run tribo writer

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kang/ros2_ws/src/tribo/src/writer.cpp" "CMakeFiles/writer.dir/src/writer.cpp.o" "gcc" "CMakeFiles/writer.dir/src/writer.cpp.o.d"
+  "/home/kang/Documents/tribo-slide/ros2_ws/src/tribo/src/writer.cpp" "CMakeFiles/writer.dir/src/writer.cpp.o" "gcc" "CMakeFiles/writer.dir/src/writer.cpp.o.d"
   )
 
 # Targets to which this target links.

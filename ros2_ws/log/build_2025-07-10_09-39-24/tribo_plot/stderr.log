@@ -1,5 +1,0 @@
-  File "/home/kang/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/sensorT_fake.py", line 26
-    def __name__ == '__main__':
-                 ^^
-SyntaxError: invalid syntax
-

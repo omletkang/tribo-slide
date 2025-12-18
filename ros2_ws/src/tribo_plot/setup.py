@@ -23,6 +23,10 @@ setup(
             'plot_sensor = tribo_plot.plot_sensor:main',
             'models = tribo_plot.models:main',
             'app1 = tribo_plot.app1:main',
+            'state_manager = tribo_plot.state_manager_node:main',
+            'inference = tribo_plot.inference_node:main',
+            'app_node = tribo_plot.app_node:main',
+            'sensorT_large = tribo_plot.sensorT_large:main',
         ],
     },
 )

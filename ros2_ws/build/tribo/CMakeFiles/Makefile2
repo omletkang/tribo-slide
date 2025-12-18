@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kang/ros2_ws/src/tribo
+CMAKE_SOURCE_DIR = /home/kang/Documents/tribo-slide/ros2_ws/src/tribo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kang/ros2_ws/build/tribo
+CMAKE_BINARY_DIR = /home/kang/Documents/tribo-slide/ros2_ws/build/tribo
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -87,14 +87,14 @@ clean: CMakeFiles/writer.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/tribo_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/ros2_ws/build/tribo/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -113,14 +113,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/tribo_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tribo_uninstall.dir/build.make CMakeFiles/tribo_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tribo_uninstall.dir/build.make CMakeFiles/tribo_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/ros2_ws/build/tribo/CMakeFiles --progress-num= "Built target tribo_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles --progress-num= "Built target tribo_uninstall"
 .PHONY : CMakeFiles/tribo_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tribo_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tribo_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 .PHONY : CMakeFiles/tribo_uninstall.dir/rule
 
 # Convenience name for target.
@@ -139,14 +139,14 @@ CMakeFiles/tribo_uninstall.dir/clean:
 CMakeFiles/sensorT.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensorT.dir/build.make CMakeFiles/sensorT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensorT.dir/build.make CMakeFiles/sensorT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/ros2_ws/build/tribo/CMakeFiles --progress-num=3,4 "Built target sensorT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles --progress-num=3,4 "Built target sensorT"
 .PHONY : CMakeFiles/sensorT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensorT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sensorT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 .PHONY : CMakeFiles/sensorT.dir/rule
 
 # Convenience name for target.
@@ -165,14 +165,14 @@ CMakeFiles/sensorT.dir/clean:
 CMakeFiles/sensorRFT.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensorRFT.dir/build.make CMakeFiles/sensorRFT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensorRFT.dir/build.make CMakeFiles/sensorRFT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/ros2_ws/build/tribo/CMakeFiles --progress-num=1,2 "Built target sensorRFT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles --progress-num=1,2 "Built target sensorRFT"
 .PHONY : CMakeFiles/sensorRFT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sensorRFT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sensorRFT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 .PHONY : CMakeFiles/sensorRFT.dir/rule
 
 # Convenience name for target.
@@ -191,14 +191,14 @@ CMakeFiles/sensorRFT.dir/clean:
 CMakeFiles/writer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/ros2_ws/build/tribo/CMakeFiles --progress-num=5,6 "Built target writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles --progress-num=5,6 "Built target writer"
 .PHONY : CMakeFiles/writer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/writer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/writer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/ros2_ws/build/tribo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles 0
 .PHONY : CMakeFiles/writer.dir/rule
 
 # Convenience name for target.

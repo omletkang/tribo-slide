@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kang/ros2_ws/src/tribo
+CMAKE_SOURCE_DIR = /home/kang/Documents/tribo-slide/ros2_ws/src/tribo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kang/ros2_ws/build/tribo
+CMAKE_BINARY_DIR = /home/kang/Documents/tribo-slide/ros2_ws/build/tribo
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/kang/ros2_ws/build/tribo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kang/ros2_ws/src/tribo /home/kang/ros2_ws/src/tribo /home/kang/ros2_ws/build/tribo /home/kang/ros2_ws/build/tribo /home/kang/ros2_ws/build/tribo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kang/Documents/tribo-slide/ros2_ws/build/tribo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kang/Documents/tribo-slide/ros2_ws/src/tribo /home/kang/Documents/tribo-slide/ros2_ws/src/tribo /home/kang/Documents/tribo-slide/ros2_ws/build/tribo /home/kang/Documents/tribo-slide/ros2_ws/build/tribo /home/kang/Documents/tribo-slide/ros2_ws/build/tribo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

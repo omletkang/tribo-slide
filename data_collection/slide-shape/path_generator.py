@@ -6,9 +6,9 @@ class PathGenerator:
         self.x = x
         self.y = y
         self.z = z
-        self.rx = 1.220
-        self.ry = 1.176
-        self.rz = 1.184
+        self.rx = 0.0 # 2025-07 rx ry rz = [1.220, 1.176, 1.184]
+        self.ry = -1/2 * np.pi
+        self.rz = 0.0
 
         self.height = 0.1 # 0.1m = 100mm = 10cm
         self.distance = 0.1
@@ -88,18 +88,22 @@ def main():
     velocity = 0.04 # Robot velocity in meters per second
     frequency = 20  # Command frequency in Hz
     shapes=['square','squareCCW','triangle','diagonal1', 'diagonal2', 'diagonal3', 'diagonal4']
+    # pose_init = [-0.095, 0.57500, 0.24130] # 2025-07
+    # pose_init = [-0.625, -0.00400, 0.07200] + [-0.025, -0.025, 0] # center -> Channel1
+    # pose_init = [-0.625 - 0.015, -0.00400 - 0.015, 0.06525] # center -> Channel1
+    pose_init = [-0.638, -0.01850, 0.08000] # center -> Channel1
 
     # Square
     for shape in shapes:
         out = generate_path(hz=frequency, velocity=velocity, shape=shape)
         file_ = shape
-        path = PathGenerator(out, x=-0.095, y=0.57500, z=0.24130, v=velocity, hz=frequency) # Safe Z = 0.40000
+        path = PathGenerator(out, x=pose_init[0], y=pose_init[1], z=pose_init[2], v=velocity, hz=frequency) # Safe Z = 0.40000
         path.save(f"./path_{file_}.csv") # square triangle diagonal
 
     # Circle
     out = generate_circle_path(hz=frequency, velocity=velocity, radius=0.015, direction='CW')
     file_ = "circle"
-    path = PathGenerator(out, x=-0.095, y=0.57500, z=0.24130, v=velocity, hz=frequency) # Safe Z = 0.40000
+    path = PathGenerator(out, x=pose_init[0], y=pose_init[1], z=pose_init[2], v=velocity, hz=frequency) # Safe Z = 0.40000
     path.save(f"./path_{file_}.csv") # Circle
 
 

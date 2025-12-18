@@ -1,5 +1,5 @@
 CMakeFiles/sensorRFT.dir/src/sensor_RFT.cpp.o: \
- /home/kang/ros2_ws/src/tribo/src/sensor_RFT.cpp \
+ /home/kang/Documents/tribo-slide/ros2_ws/src/tribo/src/sensor_RFT.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -184,7 +184,7 @@ CMakeFiles/sensorRFT.dir/src/sensor_RFT.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
  /usr/include/string.h /usr/include/strings.h \
- /home/kang/ros2_ws/src/tribo/src/RFT_UART.h \
+ /home/kang/Documents/tribo-slide/ros2_ws/src/tribo/src/RFT_UART.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
