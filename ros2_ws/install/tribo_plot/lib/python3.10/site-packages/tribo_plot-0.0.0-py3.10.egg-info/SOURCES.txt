@@ -21,7 +21,8 @@ tribo_plot/sensorT_fake.py
 tribo_plot/sensorT_large.py
 tribo_plot/state_manager_node.py
 tribo_plot/model/__init__.py
-tribo_plot/model/models.py
+tribo_plot/model/lstm.py
+tribo_plot/model/mlstm_fcn.py
 tribo_plot/utils/__init__.py
 tribo_plot/utils/layout_colorwidget.py
 tribo_plot/utils/state.py

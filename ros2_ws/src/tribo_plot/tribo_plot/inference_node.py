@@ -6,8 +6,11 @@ from std_msgs.msg import Float32MultiArray, String, Float32
 import numpy as np
 import torch
 import threading
+import os
+import joblib
 
 from tribo_plot.model.lstm import TouchNetwork, SlideNetwork
+from tribo_plot.model.mlstm_fcn import MLSTM_FCN
 
 
 class InferenceNode(Node):
@@ -22,8 +25,34 @@ class InferenceNode(Node):
         super().__init__('inference_node')
         
         # Load models
-        self.touchmodel = TouchNetwork()
-        self.slidemodel = SlideNetwork()
+        # self.touchmodel = TouchNetwork()
+        self.slidemodel = MLSTM_FCN() # SlideNetwork()
+
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.slidemodel.to(self.device)
+
+        # Load pretrained weights
+        model_dir = './src/tribo_plot/tribo_plot/model/'
+        ckpt_path = os.path.join(model_dir, 'model_ep_1000.pth')
+        checkpoint = torch.load(ckpt_path, map_location=self.device, weights_only=False)
+        self.slidemodel.load_state_dict(checkpoint['model_state_dict'])
+        self.slidemodel.eval()
+
+        # Load scalers
+        self.scaler_X = joblib.load(os.path.join(model_dir, 'scaler_X.pkl'))
+        self.scaler_y = joblib.load(os.path.join(model_dir, 'scaler_y.pkl'))
+
+        # Model Warming up
+        dummy_input = torch.zeros((1, 4, 50), dtype=torch.float32).to(self.device)
+        with torch.no_grad():
+            for _ in range(5):
+                _ = self.slidemodel(dummy_input)
+        self.get_logger().info('Models loaded and warmed up!!!!')
+        
+        # Pre-allocate buffers for real-time performance
+        self._x_flat = np.empty((50, 4), dtype=np.float32)
+        self._x_scaled = np.empty((50, 4), dtype=np.float32)
+        self._x_tensor = torch.empty((1, 4, 50), dtype=torch.float32, device=self.device)
         
         # Current state
         self.current_state = 'idle'
@@ -128,20 +157,37 @@ class InferenceNode(Node):
     
     def _infer_slide(self, window_data, state):
         """
-        Run slide inference
+        Run slide inference - optimized for real-time performance
         Input: (4, 50) window
         Output: (2,) velocity
+        Uses pre-allocated buffers to avoid repeated memory allocation
+
+        (N, C, T) = (N, 4, 50)
+        → transpose → (N, 50, 4)
+        → flatten  → (N*T, 4)
+        → StandardScaler
+        → reshape  → (N, 50, 4)
+        → transpose → (N, 4, 50)
         """
         try:
-            # Prepare input
-            input_arr = window_data.reshape(1, 4, 50).astype(np.float32)
-            input_tensor = torch.from_numpy(input_arr)
+            # Prepare input - reuse pre-allocated buffers
+            assert window_data.shape == (4, 50)
+            self._x_flat[:] = window_data.T  # (50, 4)
             
+            # Scale features in-place
+            self._x_scaled[:] = self.scaler_X.transform(self._x_flat)  # (50, 4)
+            
+            # Reshape to (1, 4, 50) by copying to pre-allocated tensor on GPU
+            self._x_tensor[0] = torch.from_numpy(self._x_scaled.T).to(self.device) # (1, 4, 50)
+
             # Inference
             with torch.no_grad():
-                vel = self.slidemodel(input_tensor)  # (1, 2)
+                y_scaled = self.slidemodel(self._x_tensor)  # (1, 2)
             
-            vel = vel.detach().numpy().flatten()  # (2,)
+            # Convert back and inverse scale
+            y_scaled_np = y_scaled.detach().cpu().numpy()
+            y = self.scaler_y.inverse_transform(y_scaled_np)  # Inverse scale
+            vel = y.flatten()  # (2,)
             
             self.get_logger().debug(f'Slide inference: vel={vel}, state={state}')
             return vel
@@ -162,8 +208,8 @@ class InferenceNode(Node):
             input_tensor = torch.from_numpy(input_arr)
             
             # Inference
-            with torch.no_grad():
-                pose = self.touchmodel(input_tensor)  # (1, 2)
+            # with torch.no_grad():
+            #     pose = self.touchmodel(input_tensor)  # (1, 2)
             
             pose = pose.detach().numpy().flatten()  # (2,)
             

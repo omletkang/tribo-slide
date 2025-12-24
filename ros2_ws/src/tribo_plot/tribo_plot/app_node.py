@@ -42,7 +42,7 @@ class AppNode(Node):
         
         self.sensor_sub = self.create_subscription(
             Float32MultiArray,
-            '/sensorT_fake',
+            '/sensorT_fake', # '/sensorT' for real sensor data, '/sensorT_fake' for mock data
             self.sensor_callback,
             10
         )
