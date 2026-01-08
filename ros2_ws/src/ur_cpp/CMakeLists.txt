@@ -42,6 +42,7 @@ ament_target_dependencies(ur_command_listener
 
 ament_target_dependencies(ur_rtde_node
   rclcpp
+  std_msgs
 )
 # target_link_libraries(ur_rtde_node ur_rtde::rtde)
 # target_link_libraries(ur_rtde_node ur_rtde)

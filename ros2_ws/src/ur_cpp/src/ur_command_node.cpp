@@ -13,8 +13,8 @@ public:
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("/urscript_interface/script_command", 10);
 
-        std::string filename = "/home/kang/Documents/tribo-slide/data_collection/slide-shape/path_" + file_index + ".csv"; // Change the file Directory !!
         // Load the path data from the file
+        std::string filename = "/home/kang/Documents/tribo-slide/data_collection/slide-shape/path_" + file_index + ".csv"; // Change the file Directory !!
         if (!loadPathData(filename)) {
             RCLCPP_ERROR(this->get_logger(), "Error loading path data.");
             rclcpp::shutdown();
@@ -93,7 +93,7 @@ int main(int argc, char** argv)
     rclcpp::init(argc, argv);
 
     if (argc < 2) {
-        std::cerr << "Usage: ros2 run ur_test ur_command_node <file_index>" << std::endl;
+        std::cerr << "Usage: ros2 run ur_cpp ur_command_node <file_index>" << std::endl;
         return 1;
     }
     std::string file_index = argv[1];
