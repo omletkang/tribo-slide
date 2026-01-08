@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-14740ded9e5c4d7a4c75.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ur_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tcp_pose_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcp_pose_node-23e160b54e51b929b076.json",
+					"name" : "tcp_pose_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-899f191a5457fe21d0e6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_command_listener::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_command_listener-61fbbb3512836ed890f4.json",
+					"name" : "ur_command_listener",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_command_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_command_node-cc4dfb5779e2f0def566.json",
+					"name" : "ur_command_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cpp_uninstall-c9b890a509350a712a58.json",
+					"name" : "ur_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_rtde_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_rtde_node-50914cb796c1e9bce52a.json",
+					"name" : "ur_rtde_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kang/Documents/tribo-slide/build/ur_cpp",
+		"source" : "/home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

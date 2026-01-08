@@ -1,0 +1,620 @@
+[0.217s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.217s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x76f755649f90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x76f755649900>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x76f755649900>>, mixin_verb=('build',))
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.471s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kang/Documents/tribo-slide'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'ros'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['cmake', 'python']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'cmake'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'python'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extensions ['python_setup_py']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1) by extension 'python_setup_py'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'ros'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['cmake', 'python']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'cmake'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'python'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extensions ['python_setup_py']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/data) by extension 'python_setup_py'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'ignore_ament_install'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['colcon_pkg']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'colcon_pkg'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['colcon_meta']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'colcon_meta'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['ros']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'ros'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['cmake', 'python']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'cmake'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'python'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extensions ['python_setup_py']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils) by extension 'python_setup_py'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'colcon_pkg'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['colcon_meta']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'colcon_meta'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['ros']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'ros'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['cmake', 'python']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'cmake'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'python'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extensions ['python_setup_py']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/utils/__pycache__) by extension 'python_setup_py'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'colcon_pkg'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['colcon_meta']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'colcon_meta'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['ros']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'ros'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['cmake', 'python']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'cmake'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'python'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extensions ['python_setup_py']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-1/weights) by extension 'python_setup_py'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['colcon_pkg']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'ros'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['cmake', 'python']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'cmake'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'python'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extensions ['python_setup_py']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch) by extension 'python_setup_py'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'ros'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['cmake', 'python']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'cmake'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'python'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extensions ['python_setup_py']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data) by extension 'python_setup_py'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'ros'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['cmake', 'python']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'cmake'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'python'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extensions ['python_setup_py']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/Libras) by extension 'python_setup_py'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['ignore', 'ignore_ament_install']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'ignore'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'ignore_ament_install'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['colcon_pkg']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'colcon_pkg'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['colcon_meta']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'ros'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['cmake', 'python']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'cmake'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'python'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extensions ['python_setup_py']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/data/tribo-250103) by extension 'python_setup_py'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['ignore', 'ignore_ament_install']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'ignore'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'ignore_ament_install'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['colcon_pkg']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'colcon_pkg'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['colcon_meta']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['ros']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'ros'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['cmake', 'python']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'cmake'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'python'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extensions ['python_setup_py']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model) by extension 'python_setup_py'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'ignore'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['colcon_meta']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'colcon_meta'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['ros']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'ros'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['cmake', 'python']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'cmake'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'python'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extensions ['python_setup_py']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/model/__pycache__) by extension 'python_setup_py'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['colcon_pkg']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'colcon_pkg'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['colcon_meta']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'colcon_meta'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['ros']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'ros'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['cmake', 'python']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'cmake'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'python'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extensions ['python_setup_py']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/output) by extension 'python_setup_py'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['colcon_pkg']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'colcon_pkg'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['colcon_meta']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'colcon_meta'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['ros']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'ros'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['cmake', 'python']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'cmake'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'python'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extensions ['python_setup_py']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils) by extension 'python_setup_py'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'ignore'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'ignore_ament_install'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['colcon_pkg']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'colcon_pkg'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['colcon_meta']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'colcon_meta'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['ros']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'ros'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['cmake', 'python']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'cmake'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'python'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extensions ['python_setup_py']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(MLSTM-FCN-torch/utils/__pycache__) by extension 'python_setup_py'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['colcon_meta']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'colcon_meta'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['ros']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'ros'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['cmake', 'python']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'cmake'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'python'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extensions ['python_setup_py']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection) by extension 'python_setup_py'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'ignore'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'ignore_ament_install'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['colcon_pkg']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'colcon_pkg'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'ros'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['cmake', 'python']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'cmake'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'python'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extensions ['python_setup_py']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/data) by extension 'python_setup_py'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['ignore', 'ignore_ament_install']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'ignore_ament_install'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['colcon_pkg']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'colcon_pkg'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'ros'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['cmake', 'python']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'cmake'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'python'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extensions ['python_setup_py']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline) by extension 'python_setup_py'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'ignore_ament_install'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['colcon_pkg']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'colcon_pkg'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['colcon_meta']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'colcon_meta'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['ros']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'ros'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['cmake', 'python']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'cmake'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'python'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extensions ['python_setup_py']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-bspline/__pycache__) by extension 'python_setup_py'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'ros'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['cmake', 'python']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'cmake'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'python'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extensions ['python_setup_py']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-maze) by extension 'python_setup_py'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'python'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extensions ['python_setup_py']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape) by extension 'python_setup_py'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-shape/__pycache__) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'ros'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline) by extension 'python_setup_py'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'ros'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['cmake', 'python']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'cmake'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'python'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extensions ['python_setup_py']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/slide-spline/__pycache__) by extension 'python_setup_py'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'ros'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['cmake', 'python']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'cmake'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'python'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extensions ['python_setup_py']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(data_collection/touch-16by16) by extension 'python_setup_py'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extensions ['ignore', 'ignore_ament_install']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extension 'ignore'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extension 'ignore_ament_install'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extensions ['colcon_pkg']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extension 'colcon_pkg'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extensions ['colcon_meta']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extension 'colcon_meta'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extensions ['ros']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo) by extension 'ros'
+[0.504s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tribo' with type 'ros.ament_cmake' and name 'tribo'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extension 'ignore'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extension 'ignore_ament_install'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extensions ['colcon_pkg']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extension 'colcon_pkg'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tribo_plot) by extension 'ros'
+[0.505s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tribo_plot' with type 'ros.ament_python' and name 'tribo_plot'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extension 'ignore'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extension 'colcon_meta'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extensions ['ros']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_cpp) by extension 'ros'
+[0.506s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/ur_cpp' with type 'ros.ament_cmake' and name 'ur_cpp'
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.506s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.543s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/kang/Documents/tribo-slide/ros2_ws/install
+[0.545s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 334 installed packages in /opt/ros/humble
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_target' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_clean_first' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'cmake_force_configure' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'ament_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.624s] DEBUG:colcon.colcon_core.verb:Building package 'tribo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/Documents/tribo-slide/build/tribo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/Documents/tribo-slide/install/tribo', 'merge_install': False, 'path': '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo', 'symlink_install': False, 'test_result_base': None}
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_target' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_clean_first' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'cmake_force_configure' from command line to 'False'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'ament_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'tribo_plot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.624s] DEBUG:colcon.colcon_core.verb:Building package 'tribo_plot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/Documents/tribo-slide/build/tribo_plot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/Documents/tribo-slide/install/tribo_plot', 'merge_install': False, 'path': '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot', 'symlink_install': False, 'test_result_base': None}
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_target' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'ur_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.625s] DEBUG:colcon.colcon_core.verb:Building package 'ur_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kang/Documents/tribo-slide/build/ur_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kang/Documents/tribo-slide/install/ur_cpp', 'merge_install': False, 'path': '/home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.625s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.626s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.626s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo' with build type 'ament_cmake'
+[0.626s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo'
+[0.630s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.630s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.634s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot' with build type 'ament_python'
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo_plot', 'ament_prefix_path')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.ps1'
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.dsv'
+[0.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/ament_prefix_path.sh'
+[0.638s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.638s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.641s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp' with build type 'ament_cmake'
+[0.641s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp'
+[0.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/Documents/tribo-slide/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/Documents/tribo-slide/install/tribo
+[0.861s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot'
+[0.862s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.862s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/ur_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp -DCMAKE_INSTALL_PREFIX=/home/kang/Documents/tribo-slide/install/ur_cpp
+[1.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot': PYTHONPATH=/home/kang/Documents/tribo-slide/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/tribo_plot build --build-base /home/kang/Documents/tribo-slide/build/tribo_plot/build install --record /home/kang/Documents/tribo-slide/build/tribo_plot/install.log --single-version-externally-managed install_data
+[1.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot' returned '0': PYTHONPATH=/home/kang/Documents/tribo-slide/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/tribo_plot build --build-base /home/kang/Documents/tribo-slide/build/tribo_plot/build install --record /home/kang/Documents/tribo-slide/build/tribo_plot/install.log --single-version-externally-managed install_data
+[1.668s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot' for CMake module files
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot' for CMake config files
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot/lib'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot/bin'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot/lib/pkgconfig/tribo_plot.pc'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages'
+[1.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo_plot', 'pythonpath')
+[1.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/pythonpath.ps1'
+[1.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/pythonpath.dsv'
+[1.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/hook/pythonpath.sh'
+[1.673s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo_plot/bin'
+[1.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo_plot)
+[1.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/package.ps1'
+[1.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/package.dsv'
+[1.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/package.sh'
+[1.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/package.bash'
+[1.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot/package.zsh'
+[1.683s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/Documents/tribo-slide/install/tribo_plot/share/colcon-core/packages/tribo_plot)
+[4.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/Documents/tribo-slide/ros2_ws/src/tribo -DCMAKE_INSTALL_PREFIX=/home/kang/Documents/tribo-slide/install/tribo
+[4.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/Documents/tribo-slide/build/tribo -- -j16 -l16
+[4.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/ur_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake /home/kang/Documents/tribo-slide/ros2_ws/src/ur_cpp -DCMAKE_INSTALL_PREFIX=/home/kang/Documents/tribo-slide/install/ur_cpp
+[4.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/ur_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/Documents/tribo-slide/build/ur_cpp -- -j16 -l16
+[13.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/ur_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/Documents/tribo-slide/build/ur_cpp -- -j16 -l16
+[13.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/ur_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/Documents/tribo-slide/build/ur_cpp
+[13.062s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_cpp)
+[13.063s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp' for CMake module files
+[13.063s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/ur_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/Documents/tribo-slide/build/ur_cpp
+[13.064s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp' for CMake config files
+[13.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_cpp', 'cmake_prefix_path')
+[13.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.ps1'
+[13.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.dsv'
+[13.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.sh'
+[13.066s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib'
+[13.066s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/bin'
+[13.067s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib/pkgconfig/ur_cpp.pc'
+[13.067s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib/python3.10/site-packages'
+[13.067s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/bin'
+[13.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.ps1'
+[13.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.dsv'
+[13.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.sh'
+[13.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.bash'
+[13.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.zsh'
+[13.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/Documents/tribo-slide/install/ur_cpp/share/colcon-core/packages/ur_cpp)
+[13.070s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_cpp)
+[13.070s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp' for CMake module files
+[13.071s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp' for CMake config files
+[13.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_cpp', 'cmake_prefix_path')
+[13.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.ps1'
+[13.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.dsv'
+[13.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/hook/cmake_prefix_path.sh'
+[13.072s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib'
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/bin'
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib/pkgconfig/ur_cpp.pc'
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/lib/python3.10/site-packages'
+[13.073s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/ur_cpp/bin'
+[13.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.ps1'
+[13.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.dsv'
+[13.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.sh'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.bash'
+[13.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.zsh'
+[13.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/Documents/tribo-slide/install/ur_cpp/share/colcon-core/packages/ur_cpp)
+[18.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --build /home/kang/Documents/tribo-slide/build/tribo -- -j16 -l16
+[18.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kang/Documents/tribo-slide/build/tribo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/Documents/tribo-slide/build/tribo
+[18.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo)
+[18.207s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo' for CMake module files
+[18.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kang/Documents/tribo-slide/build/tribo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot:/opt/ros/humble /usr/bin/cmake --install /home/kang/Documents/tribo-slide/build/tribo
+[18.209s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo' for CMake config files
+[18.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo', 'cmake_prefix_path')
+[18.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.ps1'
+[18.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.dsv'
+[18.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.sh'
+[18.211s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib'
+[18.211s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/bin'
+[18.211s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib/pkgconfig/tribo.pc'
+[18.211s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib/python3.10/site-packages'
+[18.211s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/bin'
+[18.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.ps1'
+[18.212s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.dsv'
+[18.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.sh'
+[18.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.bash'
+[18.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.zsh'
+[18.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/Documents/tribo-slide/install/tribo/share/colcon-core/packages/tribo)
+[18.215s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribo)
+[18.216s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo' for CMake module files
+[18.216s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo' for CMake config files
+[18.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribo', 'cmake_prefix_path')
+[18.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.ps1'
+[18.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.dsv'
+[18.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/hook/cmake_prefix_path.sh'
+[18.218s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib'
+[18.218s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/bin'
+[18.218s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib/pkgconfig/tribo.pc'
+[18.218s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/lib/python3.10/site-packages'
+[18.218s] Level 1:colcon.colcon_core.environment:checking '/home/kang/Documents/tribo-slide/install/tribo/bin'
+[18.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.ps1'
+[18.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.dsv'
+[18.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.sh'
+[18.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.bash'
+[18.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/kang/Documents/tribo-slide/install/tribo/share/tribo/package.zsh'
+[18.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kang/Documents/tribo-slide/install/tribo/share/colcon-core/packages/tribo)
+[18.220s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.222s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.258s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[18.258s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.258s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.259s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.259s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[18.259s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.260s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/Documents/tribo-slide/install/local_setup.ps1'
+[18.261s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kang/Documents/tribo-slide/install/_local_setup_util_ps1.py'
+[18.262s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/Documents/tribo-slide/install/setup.ps1'
+[18.263s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/Documents/tribo-slide/install/local_setup.sh'
+[18.264s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kang/Documents/tribo-slide/install/_local_setup_util_sh.py'
+[18.265s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/Documents/tribo-slide/install/setup.sh'
+[18.266s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/Documents/tribo-slide/install/local_setup.bash'
+[18.266s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/Documents/tribo-slide/install/setup.bash'
+[18.267s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kang/Documents/tribo-slide/install/local_setup.zsh'
+[18.268s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kang/Documents/tribo-slide/install/setup.zsh'

@@ -37,6 +37,16 @@ public:
       return;
     }
 
+    // Register the shutdown callback
+    rclcpp::on_shutdown([this]() {
+      RCLCPP_INFO(this->get_logger(), "Shutting down RTDECommandNode");
+      if (rtde_control_) {
+        rtde_control_->servoStop();
+        rtde_control_->stopScript();
+        RCLCPP_INFO(this->get_logger(), "UR robot stopped safely.");
+      }
+    });
+
     // Load the path data from the file
     std::string filename = file_dir + "/path_" + file_index + ".csv";
 

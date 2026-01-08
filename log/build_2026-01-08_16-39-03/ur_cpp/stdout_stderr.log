@@ -1,0 +1,72 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system thread 
+-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kang/Documents/tribo-slide/build/ur_cpp
+[ 25%] [32mBuilding CXX object CMakeFiles/ur_command_listener.dir/src/ur_command_listener.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tcp_pose_node.dir/src/tcp_pose_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ur_command_node.dir/src/ur_command_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ur_rtde_node.dir/src/ur_rtde_node.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable tcp_pose_node[0m
+[ 62%] Built target tcp_pose_node
+[ 75%] [32m[1mLinking CXX executable ur_command_node[0m
+[ 75%] Built target ur_command_node
+[ 87%] [32m[1mLinking CXX executable ur_rtde_node[0m
+[ 87%] Built target ur_rtde_node
+[100%] [32m[1mLinking CXX executable ur_command_listener[0m
+[100%] Built target ur_command_listener
+-- Install configuration: ""
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/tcp_pose_node
+-- Set runtime path of "/home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/tcp_pose_node" to ""
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_command_node
+-- Set runtime path of "/home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_command_node" to ""
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_command_listener
+-- Set runtime path of "/home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_command_listener" to ""
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_rtde_node
+-- Set runtime path of "/home/kang/Documents/tribo-slide/install/ur_cpp/lib/ur_cpp/ur_rtde_node" to ""
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ament_index/resource_index/package_run_dependencies/ur_cpp
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ament_index/resource_index/parent_prefix_path/ur_cpp
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/environment/ament_prefix_path.sh
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/environment/ament_prefix_path.dsv
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/environment/path.sh
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/environment/path.dsv
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/local_setup.bash
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/local_setup.sh
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/local_setup.zsh
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/local_setup.dsv
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.dsv
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ament_index/resource_index/packages/ur_cpp
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/cmake/ur_cppConfig.cmake
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/cmake/ur_cppConfig-version.cmake
+-- Installing: /home/kang/Documents/tribo-slide/install/ur_cpp/share/ur_cpp/package.xml

@@ -1,0 +1,87 @@
+[0.651s] Invoking command in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot': PYTHONPATH=/home/kang/Documents/tribo-slide/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/tribo_plot build --build-base /home/kang/Documents/tribo-slide/build/tribo_plot/build install --record /home/kang/Documents/tribo-slide/build/tribo_plot/install.log --single-version-externally-managed install_data
+[0.866s] running egg_info
+[0.867s] creating ../../../build/tribo_plot/tribo_plot.egg-info
+[0.868s] writing ../../../build/tribo_plot/tribo_plot.egg-info/PKG-INFO
+[0.869s] writing dependency_links to ../../../build/tribo_plot/tribo_plot.egg-info/dependency_links.txt
+[0.869s] writing entry points to ../../../build/tribo_plot/tribo_plot.egg-info/entry_points.txt
+[0.869s] writing requirements to ../../../build/tribo_plot/tribo_plot.egg-info/requires.txt
+[0.869s] writing top-level names to ../../../build/tribo_plot/tribo_plot.egg-info/top_level.txt
+[0.869s] writing manifest file '../../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[0.873s] reading manifest file '../../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[0.873s] writing manifest file '../../../build/tribo_plot/tribo_plot.egg-info/SOURCES.txt'
+[0.874s] running build
+[0.874s] running build_py
+[0.874s] creating /home/kang/Documents/tribo-slide/build/tribo_plot/build
+[0.875s] creating /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib
+[0.875s] creating /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.876s] copying tribo_plot/plot_sensor.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.876s] copying tribo_plot/app_node.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.877s] copying tribo_plot/__init__.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.877s] copying tribo_plot/app1.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.877s] copying tribo_plot/state_manager_node.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.877s] copying tribo_plot/inference_node.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.878s] copying tribo_plot/sensorT_fake.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.878s] copying tribo_plot/sensorT_large.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot
+[0.878s] creating /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model
+[0.879s] copying tribo_plot/model/lstm.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model
+[0.880s] copying tribo_plot/model/__init__.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model
+[0.880s] copying tribo_plot/model/mlstm_fcn.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model
+[0.880s] creating /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils
+[0.881s] copying tribo_plot/utils/state.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils
+[0.881s] copying tribo_plot/utils/__init__.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils
+[0.881s] copying tribo_plot/utils/layout_colorwidget.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils
+[0.881s] copying tribo_plot/utils/widget.py -> /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils
+[0.882s] running install
+[0.883s] running install_lib
+[0.886s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.887s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/plot_sensor.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.887s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model
+[0.888s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model/lstm.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model
+[0.888s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model/__init__.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model
+[0.888s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/model/mlstm_fcn.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model
+[0.888s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/app_node.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.888s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/__init__.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.889s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils
+[0.889s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils/state.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils
+[0.890s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils/__init__.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils
+[0.890s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils/layout_colorwidget.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils
+[0.890s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/utils/widget.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils
+[0.890s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/app1.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.890s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/state_manager_node.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.891s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/inference_node.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.891s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/sensorT_fake.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.891s] copying /home/kang/Documents/tribo-slide/build/tribo_plot/build/lib/tribo_plot/sensorT_large.py -> /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot
+[0.893s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/plot_sensor.py to plot_sensor.cpython-310.pyc
+[0.897s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model/lstm.py to lstm.cpython-310.pyc
+[0.898s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model/__init__.py to __init__.cpython-310.pyc
+[0.898s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/model/mlstm_fcn.py to mlstm_fcn.cpython-310.pyc
+[0.899s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app_node.py to app_node.cpython-310.pyc
+[0.900s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__init__.py to __init__.cpython-310.pyc
+[0.900s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/state.py to state.cpython-310.pyc
+[0.902s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/__init__.py to __init__.cpython-310.pyc
+[0.902s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/layout_colorwidget.py to layout_colorwidget.cpython-310.pyc
+[0.903s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/widget.py to widget.cpython-310.pyc
+[0.906s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app1.py to app1.cpython-310.pyc
+[0.907s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/state_manager_node.py to state_manager_node.cpython-310.pyc
+[0.908s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/inference_node.py to inference_node.cpython-310.pyc
+[0.910s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/sensorT_fake.py to sensorT_fake.cpython-310.pyc
+[0.911s] byte-compiling /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/sensorT_large.py to sensorT_large.cpython-310.pyc
+[0.911s] running install_data
+[0.911s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/share/ament_index
+[0.912s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/share/ament_index/resource_index
+[0.913s] creating /home/kang/Documents/tribo-slide/install/tribo_plot/share/ament_index/resource_index/packages
+[0.913s] copying resource/tribo_plot -> /home/kang/Documents/tribo-slide/install/tribo_plot/share/ament_index/resource_index/packages
+[0.914s] copying package.xml -> /home/kang/Documents/tribo-slide/install/tribo_plot/share/tribo_plot
+[0.915s] running install_egg_info
+[0.919s] Copying ../../../build/tribo_plot/tribo_plot.egg-info to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info
+[0.921s] running install_scripts
+[0.954s] Installing app1 script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.956s] Installing app_node script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing inference script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing models script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing plot_sensor script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing sensorT_fake script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing sensorT_large script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.957s] Installing state_manager script to /home/kang/Documents/tribo-slide/install/tribo_plot/lib/tribo_plot
+[0.958s] writing list of installed files to '/home/kang/Documents/tribo-slide/build/tribo_plot/install.log'
+[1.028s] Invoked command in '/home/kang/Documents/tribo-slide/ros2_ws/src/tribo_plot' returned '0': PYTHONPATH=/home/kang/Documents/tribo-slide/build/tribo_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kang/Documents/tribo-slide/install/tribo_plot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/tribo_plot build --build-base /home/kang/Documents/tribo-slide/build/tribo_plot/build install --record /home/kang/Documents/tribo-slide/build/tribo_plot/install.log --single-version-externally-managed install_data
