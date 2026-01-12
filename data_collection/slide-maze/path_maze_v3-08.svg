@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85.04 85.04">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #ee1c4e;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 135px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <text class="st1" transform="translate(-93.37 13) rotate(90)"><tspan x="0" y="0">a</tspan></text>
+    <text class="st1" transform="translate(10.72 13) rotate(90)"><tspan x="0" y="0">a</tspan></text>
+  </g>
+  <g id="Layer_2">
+    <path class="st0" d="M63.31,25.53s4.79,7.67,5.32,10.04,1.2,11.39,0,15.47-3.5,9.72-8.04,12.21-16.55,1.63-16.55,1.63l-35.21,1.36s31.14-2.52,33.02-4.65,1.92-10.82,1.48-12.63-3.53-13.75-6.87-17.87c-3.13-3.86-6.92-6.73-15.23-5.56-8.31,1.17-11.21,5.17-12.42,9.23s-.77,11.54,0,14.66,4.63,7.56,6.72,9.23,3.77,1.95,6.51,2.99,19.3,2.39,19.3,2.39c0,0-15.08,2.54-18.41,3.09s-14.12,2.72-14.12,2.72"/>
+  </g>
+</svg>

@@ -52,11 +52,43 @@ public:
         // Publish the float array every 1 milli second
         timer_ = this->create_wall_timer(
             1ms, std::bind(&SensorT_Publisher::timerCallback, this));
+
+        // Initialize calibration variables
+        calibrated_ = false;
+        calib_count_ = 0;
+        for (int i = 0; i < sensorDataNum; ++i)
+        {
+            offset_[i] = 0.0f;
+            calib_sum_[i] = 0.0f;
+        }
+        RCLCPP_INFO(this->get_logger(), "SensorT Publisher Node has been started. Calibrating...");
     }
 
 private:
+    static constexpr int N_CALIB = 1000;  // 500~1000 recommended
+
     void timerCallback()
     {
+        // Calibration phase
+        if (!calibrated_) {
+            calib_count_++;
+            for (int i = 0; i < sensorDataNum; ++i)
+            {
+                calib_sum_[i] += g_sensorData[i];
+            }
+            if (calib_count_ >= N_CALIB) // After 1000 samples
+            {
+                for (int i = 0; i < sensorDataNum; ++i)
+                {
+                    offset_[i] = calib_sum_[i] / static_cast<float>(calib_count_);
+                }
+                calibrated_ = true;
+                RCLCPP_INFO(this->get_logger(), "Calibration completed. Offsets: [%6.2f, %6.2f, %6.2f, %6.2f]",
+                            offset_[0], offset_[1], offset_[2], offset_[3]);
+            }
+            return; // Skip publishing during calibration
+        }
+
         auto message = std_msgs::msg::Float32MultiArray();
         message.layout.dim.push_back(std_msgs::msg::MultiArrayDimension());
         message.layout.dim[0].size = 4; // Size of the array
@@ -64,7 +96,9 @@ private:
         message.layout.dim[0].label = "float_array";
 
         // Populate the float array
-        for (int i = 0; i < 4; ++i){message.data.push_back(g_sensorData[i]);}
+        for (int i = 0; i < sensorDataNum; ++i){
+            message.data.push_back(g_sensorData[i] - offset_[i]);
+        }
 
         // log
         // RCLCPP_INFO(this->get_logger(), "[%6.2f, %6.2f, %6.2f, %6.2f]",
@@ -74,6 +108,11 @@ private:
 
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
+
+    bool  calibrated_;
+    int   calib_count_;
+    float calib_sum_[4];
+    float offset_[4];
 
 };// class SensorT_Publisher
 

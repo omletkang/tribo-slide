@@ -13,41 +13,35 @@ Command this text on the terminal
 and Check the tribo sensor Signal and F/T force value
 Change the z value and repeat it until you get the right Z offset
 """
-
+# 2024
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
 "movep(p[-0.095, 0.57500, 0.25000, 1.220, 1.176, 1.184], a=0.2, v=0.05)"}'
 
+# 2025-01-12
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.095, 0.57500, 0.24100, 1.220, 1.176, 1.184], a=0.2, v=0.05)"}'
+"movep(p[-0.562, 0.0309, 0.22200, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.095, 0.57500, 0.24230, 1.220, 1.176, 1.184], a=0.2, v=0.05)"}'
-
-# 2025-12-16
-ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.638, -0.01850, 0.17200, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+"movep(p[-0.562, 0.0309, 0.09500, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.638, -0.01850, 0.09500, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
-
-ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.638, -0.01850, 0.06525, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+"movep(p[-0.562, 0.0309, 0.06710, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 -----
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data:
 "def my_prog():
 
   set_digital_out(1, True)
-    z = 0.06525
-    movep(p[-0.625, -0.00400, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
+    z = 0.06710
+    movep(p[-0.562, 0.0309, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
     sleep(2.)
 
-    movep(p[-0.625, -0.00400, z, 0.0, -1.57, 0.0], a=0.2, v=0.04)
+    movep(p[-0.562, 0.0309, z, 0.0, -1.57, 0.0], a=0.2, v=0.04)
 	
 	sleep(2.)
 
-	movep(p[-0.625, -0.00400, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
+	movep(p[-0.562, 0.0309, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
   textmsg(\"motion finished\")
 
@@ -60,9 +54,9 @@ ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{d
 "def my_prog():
 
   set_digital_out(1, True)
-    x = -0.638
-    y = -0.01850
-    z = 0.08000
+    x = -0.562
+    y = 0.0309
+    z = 0.06710
 	  d = 0.03
     movep(p[x, y, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 

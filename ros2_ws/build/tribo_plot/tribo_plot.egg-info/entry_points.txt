@@ -7,4 +7,3 @@ plot_sensor = tribo_plot.plot_sensor:main
 sensorT_fake = tribo_plot.sensorT_fake:main
 sensorT_large = tribo_plot.sensorT_large:main
 state_manager = tribo_plot.state_manager_node:main
-

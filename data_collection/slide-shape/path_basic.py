@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
-import matplotlib.cm as cm
 
 def generate_path(L: float=0.03, hz: int=50, velocity: float=0.04, shape='square') -> np.ndarray:
     """

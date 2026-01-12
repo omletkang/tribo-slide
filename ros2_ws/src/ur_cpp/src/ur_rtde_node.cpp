@@ -16,12 +16,12 @@ class RTDECommandNode : public rclcpp::Node
 {
 public:
   explicit RTDECommandNode(const std::string& file_index="square")
-  : Node("rtde_command_node"), frequency_(50.0), current_index_(0), repeat_count_(0), max_repeats_(3)
+  : Node("rtde_command_node"), frequency_(50.0), current_index_(0), repeat_count_(0), max_repeats_(10)
   {
     // Parameters
     this->declare_parameter<std::string>("robot_ip", "192.168.10.2");
     this->declare_parameter<std::string>("file_dir",
-      "/home/kang/Documents/tribo-slide/data_collection/slide-shape"); // Adjust the default directory as needed !!
+      "/home/kang/Documents/tribo-slide/data_collection/slide-maze"); // Adjust the default directory as needed !!
     const auto robot_ip = this->get_parameter("robot_ip").as_string();
     const auto file_dir = this->get_parameter("file_dir").as_string();
     RCLCPP_INFO(this->get_logger(), "Connecting to UR at: %s ...", robot_ip.c_str());
@@ -36,16 +36,6 @@ public:
       rclcpp::shutdown();
       return;
     }
-
-    // Register the shutdown callback
-    rclcpp::on_shutdown([this]() {
-      RCLCPP_INFO(this->get_logger(), "Shutting down RTDECommandNode");
-      if (rtde_control_) {
-        rtde_control_->servoStop();
-        rtde_control_->stopScript();
-        RCLCPP_INFO(this->get_logger(), "UR robot stopped safely.");
-      }
-    });
 
     // Load the path data from the file
     std::string filename = file_dir + "/path_" + file_index + ".csv";
@@ -80,9 +70,9 @@ public:
 
     ~RTDECommandNode() {
       RCLCPP_INFO(this->get_logger(), "Stopping RTDECommandNode");
-      if (rtde_control_) {
-          rtde_control_->stopScript();
-      }
+      // if (rtde_control_) {
+      //     rtde_control_->stopScript();
+      // } // It makes robot stop abruptly !!
     }
 
 
@@ -152,7 +142,7 @@ private:
       return;
     }
 
-    constexpr double speed = 0.04;
+    constexpr double speed = 0.10;
     constexpr double acceleration = 0.5;
     const double dt = 1.0 / frequency_; // Must match timer: 1/50 = 0.02
     constexpr double lookahead = 0.1; // loadhead time

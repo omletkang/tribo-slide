@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/home/kang/miniconda3/envs/tribo/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'tribo-plot==0.0.0','console_scripts','sensorT_fake'
 import re
 import sys

@@ -236,6 +236,19 @@ writer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/build
 .PHONY : writer/fast
 
+#=============================================================================
+# Target rules for targets named writer_v2
+
+# Build rule for target.
+writer_v2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 writer_v2
+.PHONY : writer_v2
+
+# fast build rule for target.
+writer_v2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer_v2.dir/build.make CMakeFiles/writer_v2.dir/build
+.PHONY : writer_v2/fast
+
 src/sensor_RFT.o: src/sensor_RFT.cpp.o
 .PHONY : src/sensor_RFT.o
 
@@ -308,6 +321,30 @@ src/writer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer.dir/build.make CMakeFiles/writer.dir/src/writer.cpp.s
 .PHONY : src/writer.cpp.s
 
+src/writer_v2.o: src/writer_v2.cpp.o
+.PHONY : src/writer_v2.o
+
+# target to build an object file
+src/writer_v2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer_v2.dir/build.make CMakeFiles/writer_v2.dir/src/writer_v2.cpp.o
+.PHONY : src/writer_v2.cpp.o
+
+src/writer_v2.i: src/writer_v2.cpp.i
+.PHONY : src/writer_v2.i
+
+# target to preprocess a source file
+src/writer_v2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer_v2.dir/build.make CMakeFiles/writer_v2.dir/src/writer_v2.cpp.i
+.PHONY : src/writer_v2.cpp.i
+
+src/writer_v2.s: src/writer_v2.cpp.s
+.PHONY : src/writer_v2.s
+
+# target to generate assembly for a file
+src/writer_v2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/writer_v2.dir/build.make CMakeFiles/writer_v2.dir/src/writer_v2.cpp.s
+.PHONY : src/writer_v2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... sensorRFT"
 	@echo "... sensorT"
 	@echo "... writer"
+	@echo "... writer_v2"
 	@echo "... src/sensor_RFT.o"
 	@echo "... src/sensor_RFT.i"
 	@echo "... src/sensor_RFT.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/writer.o"
 	@echo "... src/writer.i"
 	@echo "... src/writer.s"
+	@echo "... src/writer_v2.o"
+	@echo "... src/writer_v2.i"
+	@echo "... src/writer_v2.s"
 .PHONY : help
 
 

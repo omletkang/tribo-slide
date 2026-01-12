@@ -32,10 +32,17 @@ ament_target_dependencies(writer
   geometry_msgs
 )
 
+add_executable(writer_v2 src/writer_v2.cpp)
+ament_target_dependencies(writer_v2 
+  rclcpp 
+  std_msgs 
+)
+
 install(TARGETS
   sensorT
   sensorRFT
   writer
+  writer_v2
   DESTINATION lib/${PROJECT_NAME})
   
 install(DIRECTORY launch/

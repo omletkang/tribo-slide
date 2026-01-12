@@ -1,7 +1,7 @@
 % Triboresistive Project (2024)
 
 %% Load File
-root_dir = "./maze_1/"; % "./"
+root_dir = "./"; % "./maze_1/"; % "./"
 filename = root_dir + "Log_Sensor_T_.txt"; % Specify the file name
 sensorT = readmatrix(filename);   % Read the file into a matrix
 
@@ -41,6 +41,10 @@ plot(sensor4);
 pos_x = RobotPos(:,2);
 pos_y = RobotPos(:,3);
 
+figure
 plot(pos_x, pos_y)
+axis equal;
 % xlim([-0.095-0.01 -0.095+0.04])
 % ylim([0.575-0.01 0.575+0.04])
+
+
