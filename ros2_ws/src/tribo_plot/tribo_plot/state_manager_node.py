@@ -190,7 +190,8 @@ class StateManagerNode(Node):
             # data = self.window.copy() # TODO: .copy() fast?
         data = self.window
         
-        metric = np.mean(np.abs(np.mean(data, axis=0)))  # mean of abs((50,)) shape
+        # metric = np.mean(np.abs(np.mean(data, axis=0)))  # mean of abs((50,)) shape
+        metric = np.sum(np.abs(np.mean(data, axis=0)))
         return metric
     
     def get_touch_buffer(self):

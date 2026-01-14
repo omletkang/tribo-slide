@@ -18,7 +18,9 @@ __pycache__/
 
 # Logs
 *.log
-/MLSTM-FCN-torch/output/
+/MLSTM-FCN-torch/output/*.pth
+/MLSTM-FCN-torch/output/*.pkl
+/MLSTM-FCN-torch/output/*.json.txt
 
 # Models
 *.pt

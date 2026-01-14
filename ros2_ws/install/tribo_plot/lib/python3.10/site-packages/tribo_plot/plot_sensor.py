@@ -22,7 +22,7 @@ class SensorPlotter(Node):
             '/sensorT',
             self.sensor_callback,
             10
-        )
+        ) # /sensorT or /sensorT_fake
 
         # Start ROS2 spinning in a separate thread
         self.ros_thread = threading.Thread(target=rclpy.spin, args=(self,), daemon=True)

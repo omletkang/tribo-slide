@@ -93,7 +93,6 @@ packaging==24.1
 pandas==2.3.3
 pillow==11.0.0
 pluggy==1.5.0
-ply @ file:///home/conda/feedstock_root/build_artifacts/ply_1733239724146/work
 pyparsing==3.2.0
 PyQt5==5.15.9
 PyQt5-sip==12.12.2
@@ -147,7 +146,6 @@ scikit-learn==1.7.2
 scipy==1.14.1
 sensor-msgs-py==4.9.0
 shiboken2==5.15.15
-sip @ file:///home/conda/feedstock_root/build_artifacts/sip_1697300428978/work
 six==1.16.0
 sros2==0.10.7
 svg.path==6.3
@@ -156,7 +154,6 @@ teleop-twist-keyboard==2.4.1
 tf2-ros-py==0.25.17
 tf2-tools==0.25.17
 threadpoolctl==3.6.0
-toml @ file:///home/conda/feedstock_root/build_artifacts/toml_1734091811753/work
 tomli==2.0.2
 topic-monitor==0.20.7
 torch==2.6.0+cu124

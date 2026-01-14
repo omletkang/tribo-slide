@@ -138,8 +138,11 @@ class AppPlotter(QtWidgets.QMainWindow):
             self.trajectory_plot.setData(traj[:, 0], traj[:, 1])
             
             # Auto-scale
-            x_min, x_max = traj[:, 0].min(), traj[:, 0].max()
-            y_min, y_max = traj[:, 1].min(), traj[:, 1].max()
+            # x_min, x_max = traj[:, 0].min(), traj[:, 0].max()
+            # y_min, y_max = traj[:, 1].min(), traj[:, 1].max()
+            x_min, x_max = -0.03, 0.03
+            y_min, y_max = -0.03, 0.03
+            
             margin_x = (x_max - x_min) * 0.1 if x_max > x_min else 0.5
             margin_y = (y_max - y_min) * 0.1 if y_max > y_min else 0.5
             self.w1.setXRange(x_min - margin_x, x_max + margin_x)
