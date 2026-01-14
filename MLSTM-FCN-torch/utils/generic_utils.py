@@ -8,8 +8,8 @@ from torch.utils.data import Dataset
 
 # mpl.style.use('seaborn-paper')
 
-TRAIN_FILES = '../data/tribo-250103/'
-TEST_FILES = '../data/tribo-250103/'
+TRAIN_FILES = '../data/tribo_260112/'
+TEST_FILES = '../data/tribo_260112/'
 
 class MyDataset(Dataset):
     def __init__(self, x, y):
