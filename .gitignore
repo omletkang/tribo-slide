@@ -16,6 +16,10 @@ __pycache__/
 *.pkl
 *.h5
 
+# Logs
+*.log
+/MLSTM-FCN-torch/output/
+
 # Models
 *.pt
 *.pth
