@@ -22,17 +22,20 @@ ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{d
 "movep(p[-0.562, 0.0309, 0.22200, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
+"movep(p[-0.562, 0.0309, 0.15200, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+
+ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
 "movep(p[-0.562, 0.0309, 0.09500, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data: 
-"movep(p[-0.562, 0.0309, 0.06710, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
+"movep(p[-0.562, 0.0309, 0.06740, 0.0, -1.57, 0.0], a=0.2, v=0.05)"}'
 
 -----
 ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{data:
 "def my_prog():
 
   set_digital_out(1, True)
-    z = 0.06710
+    z = 0.09500
     movep(p[-0.562, 0.0309, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 
     sleep(2.)
@@ -56,7 +59,7 @@ ros2 topic pub --once /urscript_interface/script_command std_msgs/msg/String '{d
   set_digital_out(1, True)
     x = -0.562
     y = 0.0309
-    z = 0.06710
+    z = 0.06735
 	  d = 0.03
     movep(p[x, y, z + 0.10,  0.0, -1.57, 0.0], a=0.2, v=0.04)
 

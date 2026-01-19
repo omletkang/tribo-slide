@@ -14,6 +14,7 @@ test/test_flake8.py
 test/test_pep257.py
 tribo_plot/__init__.py
 tribo_plot/app1.py
+tribo_plot/app2.py
 tribo_plot/app_node.py
 tribo_plot/inference_node.py
 tribo_plot/plot_sensor.py
@@ -24,6 +25,5 @@ tribo_plot/model/__init__.py
 tribo_plot/model/lstm.py
 tribo_plot/model/mlstm_fcn.py
 tribo_plot/utils/__init__.py
-tribo_plot/utils/layout_colorwidget.py
 tribo_plot/utils/state.py
 tribo_plot/utils/widget.py

@@ -50,6 +50,7 @@ public:
         publisher_ = this->create_publisher<std_msgs::msg::Float32MultiArray>("sensorT", 10);
 
         // Publish the float array every 1 milli second
+        // 1ms for Data collection, 1.2ms for Inference
         timer_ = this->create_wall_timer(
             1ms, std::bind(&SensorT_Publisher::timerCallback, this));
 

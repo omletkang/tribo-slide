@@ -90,7 +90,7 @@ class PathGenerator:
 def main():
     # Parameters
     L = 0.03            # [m]; Length of the square path in meters
-    velocity = 0.04     # [m/s]; Robot velocity in meters per second
+    velocity = 0.10     # [m/s]; Robot velocity in meters per second
     frequency = 50      # [Hz]; Command frequency in Hz
     shape_list = ['square','squareCCW','triangle','diagonal1','diagonal2','diagonal3','diagonal4',
                   'diagonal1_1','diagonal1_2','diagonal1_3','diagonal1_4','diagonal1_5','diagonal1_6',
@@ -104,7 +104,7 @@ def main():
 
     # pose_init = [-0.095, 0.57500, 0.24130] # 2025-07
     # pose_init = [-0.638, -0.01850, 0.08000] # center -> Channel1
-    pose_init = [-0.63800, -0.00650, 0.24000] # height adjusted to 0.44m # Safety mode
+    pose_init = [-0.56200, 0.03090, 0.06735] # 2026-01-19 Sensor 2D-23
 
     # Shape Path Generation
     for shape in shape_list:

@@ -88,6 +88,7 @@ def plot_colorLine(ax, path, L=0.03):
     x = path_rotated[:, 0]
     y = path_rotated[:, 1]
     N = path_rotated.shape[0]
+    print(f"x, y init position: {x[0]:.5f}, {y[0]:.5f}")
 
     # Create line segments for LineCollection
     points = path_rotated.reshape(-1, 1, 2)
@@ -131,7 +132,7 @@ def main():
         # Generate the path
 
         path = extract_path_coordinates(svg_file, L, velocity, frequency)
-
+        print(f"Processing SVG: {svg_file}")
         print(f"Path Shape: {path.shape} -> {path.shape[0]} steps")
         
         lc, norm = plot_colorLine(ax, path, L=L)

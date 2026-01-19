@@ -1,5 +1,6 @@
 [console_scripts]
 app1 = tribo_plot.app1:main
+app2 = tribo_plot.app2:main
 app_node = tribo_plot.app_node:main
 inference = tribo_plot.inference_node:main
 models = tribo_plot.models:main

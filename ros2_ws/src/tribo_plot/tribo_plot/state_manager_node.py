@@ -18,7 +18,7 @@ class StateManagerNode(Node):
         # Subscribers
         self.subscription = self.create_subscription(
             Float32MultiArray,
-            '/sensorT_fake', # '/sensorT' for real sensor data, '/sensorT_fake' for mock data
+            '/sensorT', # '/sensorT' for real sensor data, '/sensorT_fake' for mock data
             self.sensor_callback,
             10
         )
@@ -70,7 +70,8 @@ class StateManagerNode(Node):
             self.touch_buffer[:, -1] = data
             
             # Only increment window_cnt when in 'stay' or 'slide' state (after pause counter ends)
-            if self.state in ['stay', 'slide'] and self.window_cnt < self.window_size:
+            current_state = self.state
+            if current_state in ['stay', 'slide'] and self.window_cnt < self.window_size:
                 self.window[:, self.window_cnt] = data
                 self.window_cnt += 1
             
@@ -96,7 +97,7 @@ class StateManagerNode(Node):
         """
         with self.lock:
             if self.state == 'idle':
-                if touch_metric > 300:
+                if touch_metric > 60:
                     self.state = 'touch'
                     self.update_pause_cnt = 500
             
@@ -120,7 +121,7 @@ class StateManagerNode(Node):
                     # self.get_logger().info(f'slide_metric {slide_metric} {self.window_cnt}')
                     
                     # Determine if stay or slide
-                    if slide_metric < 20:
+                    if slide_metric < 30:
                         new_state = 'stay'
                     else:
                         new_state = 'slide'
@@ -147,9 +148,6 @@ class StateManagerNode(Node):
             self.state_pub.publish(state_msg)
             self.last_state = self.state
             self.get_logger().info(f'STATE: {self.state}')
-
-        # DEBUG
-        # self.get_logger().info("end")
     
     def _publish_window(self):
         """

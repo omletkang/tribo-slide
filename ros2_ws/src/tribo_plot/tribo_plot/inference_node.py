@@ -26,7 +26,7 @@ class InferenceNode(Node):
         
         # Load models
         # self.touchmodel = TouchNetwork()
-        self.slidemodel = MLSTM_FCN() # SlideNetwork()
+        self.slidemodel = MLSTM_FCN()
 
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.slidemodel.to(self.device)

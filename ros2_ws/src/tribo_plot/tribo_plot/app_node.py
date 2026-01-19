@@ -42,7 +42,7 @@ class AppNode(Node):
         
         self.sensor_sub = self.create_subscription(
             Float32MultiArray,
-            '/sensorT_fake', # '/sensorT' for real sensor data, '/sensorT_fake' for mock data
+            '/sensorT', # '/sensorT' for real sensor data, '/sensorT_fake' for mock data
             self.sensor_callback,
             10
         )
@@ -68,11 +68,22 @@ class AppNode(Node):
         """
         state = msg.data
         
+        with self.lock:
+            self.plotter.update_state(state)
+        
+        # Set pose index at start of new touch sequence
+        if state == 'touch':
+            with self.lock:
+                self.plotter.current_touch_idx = self.plotter.n_touch
+        
         # Reset trajectory when detaching
         if state == 'idle':
             with self.lock:
                 self.plotter.reset()
             self.get_logger().info('Reset plotter (detach/idle)')
+        elif state == 'detach':
+            with self.lock:
+                self.plotter.add_touch()
     
     def sensor_callback(self, msg):
         """

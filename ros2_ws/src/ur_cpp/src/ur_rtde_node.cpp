@@ -21,7 +21,7 @@ public:
     // Parameters
     this->declare_parameter<std::string>("robot_ip", "192.168.10.2");
     this->declare_parameter<std::string>("file_dir",
-      "/home/kang/Documents/tribo-slide/data_collection/slide-maze"); // Adjust the default directory as needed !!
+      "/home/kang/Documents/tribo-slide/data_collection/slide-shape"); // Adjust the default directory as needed !!
     const auto robot_ip = this->get_parameter("robot_ip").as_string();
     const auto file_dir = this->get_parameter("file_dir").as_string();
     RCLCPP_INFO(this->get_logger(), "Connecting to UR at: %s ...", robot_ip.c_str());
@@ -203,7 +203,7 @@ int main(int argc, char** argv)
   if (argc >= 2) {
     file_index = argv[1];
   } else {
-    std::cerr << "Usage: ros2 run ur_cpp ur_command_node <file_index>" << std::endl;
+    std::cerr << "Usage: ros2 run ur_cpp ur_rtde_node <file_index>" << std::endl;
   }
 
   auto node = std::make_shared<RTDECommandNode>(file_index);
