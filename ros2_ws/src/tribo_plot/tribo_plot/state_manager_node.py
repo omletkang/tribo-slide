@@ -27,6 +27,7 @@ class StateManagerNode(Node):
         self.state_pub = self.create_publisher(String, '/tribo/state', 10)
         self.touch_metric_pub = self.create_publisher(Float32, '/tribo/touch_metric', 10)
         self.window_pub = self.create_publisher(Float32MultiArray, '/tribo/window_buffer', 10)
+        self.touch_pose_pub = self.create_publisher(Float32MultiArray, '/tribo/touch_pose', 10)
         
         # State management
         self.__state = 'idle'
@@ -39,6 +40,7 @@ class StateManagerNode(Node):
         self.window = np.zeros((4, self.window_size))
         self.window_cnt = 0
         self.touch_buffer = np.zeros((4, self.window_size))  # (4, 50) rolling buffer for metric_touch
+        self.touch_max = np.zeros(4)  # Track max values during touch pause period
         
         # Threading and locking
         self.lock = threading.Lock()
@@ -68,6 +70,21 @@ class StateManagerNode(Node):
             # Actually, let's keep a rolling window in touch_buffer
             self.touch_buffer = np.roll(self.touch_buffer, -1, axis=1)
             self.touch_buffer[:, -1] = data
+            
+            # Track max values during pause period (500→100) for touch pose calculation
+            if self.state == 'touch' and self.update_pause_cnt > 100 and self.update_pause_cnt <= 500:
+                # Update touch_max with element-wise maximum
+                self.touch_max = np.maximum(self.touch_max, data)
+            elif self.state == 'touch' and self.update_pause_cnt == 100:
+                touch_sum = np.sum(self.touch_max)
+                if touch_sum > 0:  # Avoid division by zero
+                    alpha = (self.touch_max[2] + self.touch_max[3]) / touch_sum
+                    beta = (self.touch_max[0] + self.touch_max[3]) / touch_sum
+                    touch_pose_msg = Float32MultiArray(data=[alpha, beta])
+                    self.touch_pose_pub.publish(touch_pose_msg)
+                    self.get_logger().info(f'TOUCH_POSE: alpha={alpha:.4f}, beta={beta:.4f}')
+                # Reset touch_max
+                self.touch_max = np.zeros(4)
             
             # Only increment window_cnt when in 'stay' or 'slide' state (after pause counter ends)
             current_state = self.state
@@ -118,10 +135,10 @@ class StateManagerNode(Node):
                     # Calculate slide metric locally
                     slide_metric = self.metric_slide()
                     # DEBUG
-                    # self.get_logger().info(f'slide_metric {slide_metric} {self.window_cnt}')
+                    self.get_logger().info(f'slide_metric {slide_metric} {self.window_cnt}')
                     
                     # Determine if stay or slide
-                    if slide_metric < 30:
+                    if slide_metric < 40: # 800: # 200 :# 40: # 30
                         new_state = 'stay'
                     else:
                         new_state = 'slide'

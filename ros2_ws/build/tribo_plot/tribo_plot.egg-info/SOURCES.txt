@@ -15,6 +15,8 @@ test/test_pep257.py
 tribo_plot/__init__.py
 tribo_plot/app1.py
 tribo_plot/app2.py
+tribo_plot/app2_old.py
+tribo_plot/app2_old2.py
 tribo_plot/app_node.py
 tribo_plot/inference_node.py
 tribo_plot/plot_sensor.py

@@ -52,7 +52,7 @@ public:
         // Publish the float array every 1 milli second
         // 1ms for Data collection, 1.2ms for Inference
         timer_ = this->create_wall_timer(
-            1ms, std::bind(&SensorT_Publisher::timerCallback, this));
+            1.0ms, std::bind(&SensorT_Publisher::timerCallback, this));
 
         // Initialize calibration variables
         calibrated_ = false;

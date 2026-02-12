@@ -47,6 +47,13 @@ class AppNode(Node):
             10
         )
         
+        self.touch_pose_sub = self.create_subscription(
+            Float32MultiArray,
+            '/tribo/touch_pose',
+            self.touch_pose_callback,
+            10
+        )
+        
         self.get_logger().info('App Node initialized')
     
     def velocity_callback(self, msg):
@@ -97,6 +104,17 @@ class AppNode(Node):
             self.plotter.callback(data)
         
         self.get_logger().debug(f'Received sensor data: {data}')
+    
+    def touch_pose_callback(self, msg):
+        """
+        Receive touch pose (alpha, beta) from state manager
+        msg.data: [alpha, beta] - normalized sensor coordinates
+        """
+        pose = np.array(msg.data, dtype=np.float32)
+        with self.lock:
+            # Update current touch pose in plotter
+            self.plotter.set_touch_pose(pose)
+        # self.get_logger().debug(f'Received touch pose: alpha={pose[0]:.4f}, beta={pose[1]:.4f}')
 
 
 def main(args=None):

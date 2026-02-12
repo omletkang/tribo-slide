@@ -1,6 +1,8 @@
+/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app2_old.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/plot_sensor.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app_node.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__init__.py
+/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app2_old2.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app2.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/app1.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/state_manager_node.py
@@ -13,9 +15,11 @@
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/state.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/__init__.py
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/utils/widget.py
+/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/app2_old.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/plot_sensor.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/app_node.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/__init__.cpython-310.pyc
+/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/app2_old2.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/app2.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/app1.cpython-310.pyc
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot/__pycache__/state_manager_node.cpython-310.pyc
@@ -39,6 +43,7 @@
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/python3.10/site-packages/tribo_plot-0.0.0-py3.10.egg-info/top_level.txt
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/app1
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/app2
+/home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/app2_old
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/app_node
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/inference
 /home/kang/Documents/tribo-slide/ros2_ws/install/tribo_plot/lib/tribo_plot/models

@@ -3,6 +3,7 @@
 Application Node 2 - Socket-based velocity sender
 Listens to /tribo/velocity and /tribo/state topics
 Sends dx, dy, click via UDP socket using sender.py's protocol
+Modified to use short press to move, long press to click and drag
 """
 
 import rclpy
@@ -12,8 +13,6 @@ import numpy as np
 import threading
 import socket
 import struct
-import time
-
 
 class App2Node(Node):
     """
@@ -24,20 +23,22 @@ class App2Node(Node):
     
     def __init__(self, addr=("172.28.16.1", 5000)):
         super().__init__('app2_node')
-        
+
         # Initialize UDP socket
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.addr = addr
         self.get_logger().info(f'Socket initialized for {self.addr}')
         
+        # --- Configuration ---
+        self.HOLD_DELAY = 1.0      # Time (s) to wait for mousedown
+        self.MOVE_THRESHOLD = 0.0001  # Velocity threshold to cancel the click timer
+        self.SCALER = 20.0         # Sensitivity scaler
+        
         # State tracking
-        self.current_state = 'idle'
-        self.n_touch = 0
-        self.current_touch_idx = 0
-        self.is_touching = False  # Track if currently touching
-        self.is_double_touch = False  # Track double touch for sliding
-        self.last_detach_time = None  # Track time of last detach
         self.lock = threading.Lock()
+        self.is_drag_active = False
+        self.click_timer = None
+        self.click_cancelled_by_move = False
         
         # Subscribers
         self.velocity_sub = self.create_subscription(
@@ -53,112 +54,81 @@ class App2Node(Node):
             self.state_callback,
             10
         )
-        
-        self.get_logger().info('App2 Node initialized')
-    
+
+        self.get_logger().info('Mode: Move-to-Cancel Click. Hold still for Drag.')
+
     def state_callback(self, msg):
-        """
-        Track state changes for touch detection and double-tap recognition
-        
-        State machine:
-        - touch: Start of touch sequence (sensor contact)
-        - stay: Holding position while touching
-        - slide: Moving while touching
-        - detach: Released from sensor
-        - idle: System idle
-        
-        Double-tap logic:
-        - If touch comes within 1.5 seconds of previous detach, treat as double-tap
-        - Keep is_touching=True during stay/slide phases
-        """
         state = msg.data
-        
         with self.lock:
-            prev_state = self.current_state
-            self.current_state = state
-            
-            # Start of touch sequence
             if state == 'touch':
-                if prev_state in ['idle', 'detach']:
-                    # Check if this is a double touch (within 1.5 seconds of last detach)
-                    current_time = time.time()
-                    if self.last_detach_time is not None:
-                        time_since_detach = current_time - self.last_detach_time
-                        if time_since_detach < 1.0:
-                            self.is_double_touch = True
-                            self.get_logger().info(f'Double touch detected! (Δt={time_since_detach:.2f}s)')
-                        else:
-                            self.is_double_touch = False
-                    else:
-                        self.is_double_touch = False
-                    
-                    self.current_touch_idx = self.n_touch
-                    self.is_touching = True
-                    self.get_logger().info(
-                        f'Touch detected: touch_idx={self.current_touch_idx}, '
-                        f'double_touch={self.is_double_touch}'
-                    )
-            
-            # Keep touching during stay and slide phases
-            elif state in ['stay', 'slide']:
-                self.is_touching = True
-                if state == 'slide' and self.is_double_touch:
-                    self.get_logger().debug('Sliding with double-touch active')
-            
-            # Release on detach
+                self._cancel_timer()
+                self.click_cancelled_by_move = False
+                self.is_drag_active = False
+                # Start timer to register mousedown
+                self.click_timer = threading.Timer(self.HOLD_DELAY, self._trigger_mousedown)
+                self.click_timer.start()
+
             elif state == 'detach':
-                self.is_touching = False
-                self.last_detach_time = time.time()
-                self.n_touch += 1
-                self.get_logger().info(f'Detach detected: n_touch={self.n_touch}')
-            
-            # Reset when idle
-            elif state == 'idle':
-                self.is_touching = False
-                self.is_double_touch = False
-    
+                self._cancel_timer()
+                if self.is_drag_active:
+                    self.get_logger().info('Mouse Released')
+                
+                self.is_drag_active = False
+                self.click_cancelled_by_move = False
+                # Always release mouse on detach
+                self._send_socket(0, 0, False)
+
+    def _trigger_mousedown(self):
+        with self.lock:
+            if not self.click_cancelled_by_move:
+                self.is_drag_active = True
+                self.get_logger().info('Mousedown Registered (Held Still)')
+                self._send_socket(0, 0, True)
+
+    def _cancel_timer(self):
+        if self.click_timer:
+            self.click_timer.cancel()
+            self.click_timer = None
+
     def velocity_callback(self, msg):
         """
         Receive velocity from inference node and send via socket
-        msg.data: [vx, vy] in meters
-        
+        msg.data: [vx, vy]
+
         Processing:
         1. Apply +90 degree rotation: vel = [-vy, vx]
         2. Invert Y for AHK compatibility: vel[1] *= -1
-        3. Scale by 1000 to convert m to mm
-        4. Convert to integers and send via socket
+        3. Convert to integers and send via socket
         """
         vel = np.array(msg.data, dtype=np.float32)
-        
-        with self.lock:
-            # Step 1: Rotation by +90 degrees around center (0, 0)
-            # This matches the rotation in widget.py
-            vel_rotated = np.array([-vel[1], vel[0]], dtype=np.float32)
-            
-            # Step 2: Invert Y direction for AutoHotkey compatibility
-            # (AHK uses inverted Y-axis for mouse movements)
-            vel_rotated[1] *= -1.0
+        speed = np.linalg.norm(vel)
 
-            scaler = 7.0
+        with self.lock:
+            # Check if we should cancel the click because the user is moving
+            if not self.is_drag_active and not self.click_cancelled_by_move:
+                if speed > self.MOVE_THRESHOLD:
+                    if self.click_timer:
+                        self.get_logger().info('Movement detected: Click cancelled.')
+                        self._cancel_timer()
+                        self.click_cancelled_by_move = True
+
+            # Process coordinates
+            vel_rotated = np.array([-vel[1], vel[0]], dtype=np.float32)
+            vel_rotated[1] *= -1.0 # AHK Inversion
             
-            # Step 3: Scale by 1000 (convert from m to mm)
-            vel_scaled = vel_rotated * 1000.0 * scaler
-            
-            # Step 4: Convert to integers for socket transmission
+            # Scale velocities and convert to integers for socket transmission
+            vel_scaled = vel_rotated * 1000.0 * self.SCALER
             dx = int(np.round(vel_scaled[0]))
             dy = int(np.round(vel_scaled[1]))
             
-            # Determine click state (True during touch/slide phases)
-            click = self.is_touching
-            
-            # Step 5: Send via socket
-            self._send_socket(dx, dy, click)
-            
+            # Send movement. click=True only if the timer finished successfully.
+            self._send_socket(dx, dy, self.is_drag_active)
+
             self.get_logger().debug(
                 f'Velocity -> Socket: vel={vel} -> rotated={vel_rotated} -> '
-                f'scaled={vel_scaled} -> (dx={dx}, dy={dy}, click={click})'
+                f'scaled={vel_scaled} -> (dx={dx}, dy={dy}, click={self.is_drag_active})'
             )
-    
+
     def _send_socket(self, dx, dy, click):
         """
         Send dx, dy, click via UDP socket
@@ -168,18 +138,17 @@ class App2Node(Node):
             payload = struct.pack("<iiB", dx, dy, 1 if click else 0)
             self.sock.sendto(payload, self.addr)
         except Exception as e:
-            self.get_logger().error(f'Socket send error: {e}')
+            self.get_logger().error(f'Socket error: {e}')
 
 
 def main(args=None):
     rclpy.init(args=args)
-    
+
     # Optional: configure socket address from command line arguments
     # Default: 172.28.16.1:5000 (Windows host IP)
     addr = ("172.28.16.1", 5000)
-    
+
     node = App2Node(addr=addr)
-    
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

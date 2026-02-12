@@ -27,6 +27,7 @@ setup(
             'inference = tribo_plot.inference_node:main',
             'app_node = tribo_plot.app_node:main',
             'app2 = tribo_plot.app2:main',
+            'app2_old = tribo_plot.app2_old:main',
             'sensorT_large = tribo_plot.sensorT_large:main',
         ],
     },

@@ -130,11 +130,24 @@ class AppPlotter(QtWidgets.QMainWindow):
 
         # Position information
         # Already roated +90 degree !!!!!
-        self.pose_init = np.array([[0.00172, 0.02553], # m
-                                  [0.00824, 0.02397], # a
-                                  [0.00701, 0.02621], # z
-                                  [0.00621, 0.01610], # e
-                                  [0.00000, 0.01148]]) # maze
+        # self.pose_init = np.array([[0.00172, 0.02553], # m
+        #                           [0.00824, 0.02397], # a
+        #                           [0.00701, 0.02621], # z
+        #                           [0.00621, 0.01610], # e
+        #                           [0.00000, 0.01148]]) # maze
+        
+        # self.pose_init = np.array([[0.020, 0.025],
+        #                            [0.008, 0.024],
+        #                            [0.007, 0.026],
+        #                            [0.006, 0.026]]) # srbl
+        
+        # Sensor dimensions (in meters) - adjust based on actual sensor size
+        self.sensor_width = 0.03  # 30mm
+        self.sensor_height = 0.03  # 30mm
+        self.sensor_origin = np.array([0.0, 0.0])  # Bottom-left corner of sensor
+        
+        self.pose_init = np.array([0.0, 0.0])
+
         self.n_touch = 0
         self.current_touch_idx = 0  # Index for current trajectory (set at touch start)
 
@@ -144,6 +157,8 @@ class AppPlotter(QtWidgets.QMainWindow):
         self.trajectory = np.zeros((self.max_trajectory_size, 2), dtype=np.float32)
         self.velocity_idx = 0  # Current write index
         self.trajectory_idx = 0
+
+        self.slide_factor = 1.5  # Scaling factor for velocity
         
         # Sensor data - circular buffers (no Python lists!)
         self.sensor_buffer_size = 5000
@@ -178,7 +193,7 @@ class AppPlotter(QtWidgets.QMainWindow):
 
         # Rotation by +90 degrees around center (0, 0)
         vel = np.array([-vel[1], vel[0]], dtype=np.float32)
-        
+        vel = vel * self.slide_factor # scale factor
         # Direct assignment to preallocated array
         self.velocity_stack[self.velocity_idx] = vel
         
@@ -199,9 +214,38 @@ class AppPlotter(QtWidgets.QMainWindow):
         self.velocity_idx = 0
         self.trajectory_idx = 0
         # Arrays remain preallocated, just reset indices
+        # self.pose_init = np.array([0.0, 0.0]) # no need?
 
     def add_touch(self):
         self.n_touch += 1
+    
+    def set_touch_pose(self, pose):
+        """
+        Update current touch pose from alpha, beta values
+        pose: [alpha, beta] - normalized sensor coordinates (0-1 range)
+        """
+        alpha, beta = pose[0], pose[1]
+        touch_factors = [1.2, 1.0]  # Scale factor for touch position adjustment
+        alpha = min(max(alpha * touch_factors[0], 0.0), 1.0)
+        beta = min(max(beta * touch_factors[1], 0.0), 1.0)
+        # Map normalized coordinates to physical position
+        # alpha and beta are normalized (0-1), convert to sensor dimensions
+        x = self.sensor_origin[0] + alpha * self.sensor_width
+        y = self.sensor_origin[1] + beta * self.sensor_height
+        
+        # Rotate point by +90 degrees around sensor center
+        center = np.array([self.sensor_width / 2, self.sensor_height / 2])
+        point = np.array([x, y])
+        translated_point = point - center
+        
+        # Rotation matrix for +90 degrees (counter-clockwise)
+        rad = np.deg2rad(90)
+        rotation_matrix = np.array([[np.cos(rad), -np.sin(rad)],
+                                     [np.sin(rad),  np.cos(rad)]])
+        rotated_point = translated_point @ rotation_matrix.T
+        rotated_point += center
+        
+        self.pose_init = rotated_point.astype(np.float32)
 
     def update_state(self, state):
         match state:
@@ -229,7 +273,8 @@ class AppPlotter(QtWidgets.QMainWindow):
         # Update trajectory plot with only filled portion
         if traj_len > 0:
             traj = self.trajectory[:traj_len]
-            start_pos = self.pose_init[self.current_touch_idx % 5]
+            # start_pos = self.pose_init[self.current_touch_idx % 4] # 5
+            start_pos = self.pose_init
             traj_disp = (start_pos + traj) * 1000 # convert to mm
 
             draw_raw = traj_len < 3

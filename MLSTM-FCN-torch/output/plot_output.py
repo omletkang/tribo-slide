@@ -4,7 +4,8 @@ import pandas as pd
 def main(id=30):
         
     # Read JSON log file into pandas DataFrame
-    data = pd.read_json(f'output/train_log_{id}.json.txt', lines=True)
+    # data = pd.read_json(f'output/train_log_{id}.json.txt', lines=True)
+    data = pd.read_json(f'output/train_log.json.txt', lines=True)
 
     # Create figure with two subplots
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True)

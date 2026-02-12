@@ -8,6 +8,9 @@ import torch
 import threading
 import os
 import joblib
+import csv
+import time
+from datetime import datetime
 
 from tribo_plot.model.lstm import TouchNetwork, SlideNetwork
 from tribo_plot.model.mlstm_fcn import MLSTM_FCN
@@ -88,6 +91,18 @@ class InferenceNode(Node):
             '/tribo/velocity',
             10
         )
+        
+        # Logging setup for velocity data
+        self.start_time = time.time()
+        self.log_dir = '/home/kang/Documents/tribo-slide/data_collection/data/'
+        os.makedirs(self.log_dir, exist_ok=True)
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.log_file_path = os.path.join(self.log_dir, f'Log_Vel_{timestamp}.csv')
+        self.csv_file = open(self.log_file_path, 'w', newline='')
+        self.csv_writer = csv.writer(self.csv_file)
+        self.csv_writer.writerow(['elapsed_time_ms', 'vel_x', 'vel_y'])
+        self.csv_file.flush()
+        self.get_logger().info(f'Velocity logging initialized: {self.log_file_path}')
         
         # Threading
         self.lock = threading.Lock()
@@ -227,6 +242,20 @@ class InferenceNode(Node):
         """
         msg = Float32MultiArray(data=vel.tolist())
         self.velocity_pub.publish(msg)
+        
+        # Log velocity with elapsed time
+        elapsed_ms = (time.time() - self.start_time) * 1000
+        self.csv_writer.writerow([f'{elapsed_ms:.2f}', f'{vel[0]:.6f}', f'{vel[1]:.6f}'])
+        self.csv_file.flush()
+    
+    def __del__(self):
+        """Clean up resources when node is destroyed"""
+        try:
+            if hasattr(self, 'csv_file') and self.csv_file:
+                self.csv_file.close()
+                self.get_logger().info(f'Velocity log file closed: {self.log_file_path}')
+        except Exception as e:
+            print(f'Error closing CSV file: {e}')
 
 
 def main(args=None):
